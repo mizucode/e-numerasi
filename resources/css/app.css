@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.bg-main-background {
+    background-image: url("/images/background.jpg");
+}
+
+.container {
+    max-width: 1400px;
+}
