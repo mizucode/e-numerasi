@@ -43,7 +43,7 @@
             class="rounded-2xl border border-sky-200 bg-white p-6 shadow-md transition hover:shadow-lg">
             <!-- Header -->
             <div class="flex items-center justify-between cursor-pointer" @click="open = !open">
-              <h3 class="flex items-center gap-3 text-xl font-bold text-sky-700">
+              <h3 class="flex items-center gap-3 text-3xl font-bold text-sky-700">
                 Operasi hitung bilangan bulat
               </h3>
               <svg :class="{'rotate-180': open}"
@@ -88,11 +88,11 @@
 
           {{-- Sifat-sifat Operasi --}}
           <div class="mt-8 rounded-xl border border-sky-100 bg-white p-6 shadow-md">
-            <h3 class="mb-4 flex items-center gap-3 text-2xl font-bold text-sky-700">Sifat-Sifat Operasi Hitung Bilangan
+            <h3 class="mb-4 flex items-center gap-3 text-3xl font-bold text-sky-700">Sifat-Sifat Operasi Hitung Bilangan
               Bulat</h3>
 
             {{-- Penjumlahan --}}
-            <div class="rounded-2xl border border-amber-200 bg-amber-50 p-6 shadow-lg">
+            <div class="rounded-2xl mt-8 border border-amber-200 bg-amber-50 p-6 shadow-lg">
 
               <h4 class="mb-8 text-center text-3xl font-bold text-amber-700">
                 Sifat operasi penjumlahan pada bilangan bulat! ✨
@@ -190,43 +190,154 @@
 
               </div>
             </div>
+
+            <!-- Pengurangan -->
+            <div x-data="{ open: true }"
+              class="rounded-2xl mt-8 border border-sky-200 bg-white p-6 shadow-md transition hover:shadow-lg">
+              <div class="flex items-center justify-between cursor-pointer" @click="open = !open">
+                <h4 class="w-full mb-8 text-center text-3xl font-bold text-amber-700">
+                  Sifat operasi pengurangan pada bilangan bulat! ✨
+                </h4>
+                <svg :class="{'rotate-180': open}"
+                  class="w-6 h-6 text-sky-600 transform transition-transform duration-300" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <div x-show="open" x-transition class="mt-4 text-sky-900 leading-relaxed space-y-2">
+
+                <div class="mt-6 rounded-r-lg border-l-4 border-rose-400 bg-rose-50 p-4">
+                  <p class="text-rose-900"><strong class="font-bold">Info Penting! </strong>Operasi pengurangan pada
+                    bilangan bulat memenuhi sifat tertutup. <strong class="font-bold">Artinya </strong>pengurangan dua
+                    bilangan
+                    bulat akan menghasilkan bilangan bulat juga. </p>
+                </div>
+
+              </div>
+            </div>
+
+
             {{-- Perkalian --}}
-            <div class="mt-6 rounded-lg border border-amber-100 bg-amber-50 p-6">
-              <h4 class="mb-4 text-xl font-semibold text-amber-800">Sifat pada Perkalian (×)</h4>
-              <div class="grid gap-4 md:grid-cols-2">
-                <div class="rounded-lg bg-white p-4 shadow-sm">
-                  <h5 class="font-bold text-amber-700">Komutatif (Bisa ditukar)</h5>
-                  <code class="block rounded bg-amber-100 p-2 font-mono text-amber-800">a × b = b ×
-                    a</code>
+            <div class="rounded-2xl mt-8 border border-amber-200 bg-amber-50 p-6 shadow-lg">
+              <h4 class="mb-8 text-center text-3xl font-bold text-amber-700">
+                Sifat operasi perkalian pada bilangan bulat ✨
+              </h4>
+
+              <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-blue-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Tertutup</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-blue-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <p class="text-base font-medium text-slate-700">
+                        Jika dua bilangan bulat dijumlahkan, hasilnya merupakan bilangan bulat juga.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="rounded-lg bg-white p-4 shadow-sm">
-                  <h5 class="font-bold text-amber-700">Asosiatif (Bisa dikelompokkan)</h5>
-                  <code class="block rounded bg-amber-100 p-2 font-mono text-amber-800">(a × b) × c =
-                    a × (b × c)</code>
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-emerald-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Komutatif</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-emerald-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <span class="block rounded-lg bg-emerald-50 p-3 font-mono text-lg text-emerald-800">\(a \times b =
+                        b \times a\)</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="rounded-lg bg-white p-4 shadow-sm">
-                  <h5 class="font-bold text-amber-700">Identitas (Angka Netral)</h5>
-                  <p class="mb-2 text-sm text-amber-900/80">Dalam perkalian, angka netralnya 1.</p>
-                  <code class="block rounded bg-amber-100 p-2 font-mono text-amber-800">a × 1 =
-                    a</code>
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-amber-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Asosiatif</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-amber-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <span class="block rounded-lg bg-amber-50 p-3 font-mono text-lg text-amber-800">\((a \times b)
+                        \times c = a \times (b \times c)\)</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="rounded-lg bg-white p-4 shadow-sm md:col-span-2">
-                  <h5 class="font-bold text-amber-700">Distributif (Penyebaran)</h5>
-                  <p class="mb-2 text-sm text-amber-900/80">Perkalian bisa "disebar" ke
-                    penjumlahan/pengurangan di dalam kurung.</p>
-                  <code class="block rounded bg-amber-100 p-2 font-mono text-amber-800">a × (b + c) =
-                    (a × b) + (a × c)</code>
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-rose-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Identitas</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-rose-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <span class="block rounded-lg bg-rose-50 p-3 font-mono text-lg text-rose-800">\(a \times 1 = 1
+                        \times a = a\)</span>
+                    </div>
+                  </div>
                 </div>
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-violet-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Invers (lawan)</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-violet-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <span class="block rounded-lg bg-violet-50 p-3 font-mono text-xs text-violet-800">\(a \times
+                        \frac{1}{a} = \frac{1}{a} \times a = 1 \quad (a \neq 0)\)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div x-data="{ flipped: false }"
+                  class="relative h-52 w-full [perspective:1000px] transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+                  <div @click="flipped = !flipped"
+                    class="absolute h-full w-full cursor-pointer transition-transform duration-700 [transform-style:preserve-3d]"
+                    :class="{ '[transform:rotateY(180deg)]': flipped }">
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl bg-cyan-500 p-4 text-center shadow-xl [backface-visibility:hidden]">
+                      <h5 class="text-2xl font-black text-white">Distributif</h5>
+                    </div>
+                    <div
+                      class="absolute flex h-full w-full items-center justify-center rounded-2xl border-4 border-cyan-500 bg-white p-4 text-center shadow-xl [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                      <div class="space-y-1 font-mono text-xs font-medium text-slate-700">
+                        <p>\((a+b)\times c = (a\times c) + (b\times c)\)</p>
+                        <p>\(c\times (a+b) = (c\times a) + (c\times b)\)</p>
+                        <p>\((a-b)\times c = (a\times c) - (b\times c)\)</p>
+                        <p>\(c\times (a-b) = (c\times a) - (c\times b)\)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
             {{-- Catatan Pengurangan --}}
-            <div class="mt-6 rounded-r-lg border-l-4 border-rose-400 bg-rose-50 p-4">
-              <p class="text-rose-900"><strong class="font-bold">Info Penting!</strong> Operasi
-                pengurangan itu <strong class="font-bold">tidak</strong> komutatif dan tidak asosiatif
-                ya. Coba aja <code class="bg-rose-100 px-1">5 - 3</code> beda dengan <code class="bg-rose-100 px-1">3 -
-                  5</code>.</p>
-            </div>
+
           </div>
         </section>
 
@@ -238,39 +349,79 @@
           </h2>
 
           <p class="mb-6 text-lg leading-relaxed text-sky-900">
-            Pernah bagi-bagi kue atau pizza? Nah, itulah pecahan! Pecahan dipakai untuk nunjukkin satu
-            bagian dari keseluruhan.
+            Pecahan digunakan untuk menyatakan bagian dari keseluruhan. Pecahan ditulis sebagai berikut.
+
+
+
           </p>
 
-          <div class="mb-8 rounded-xl bg-slate-800 p-4 text-center text-white shadow-lg">
-            <code class="font-mono text-3xl tracking-wider">a/b</code>
-            <p class="mt-2 text-sm font-semibold text-slate-300">
-              <span class="text-sky-300">a</span> = Pembilang (bagian yang kamu punya) <br>
-              <span class="text-amber-300">b</span> = Penyebut (total semua bagian)
-            </p>
+          <div
+            class=" mb-8 rounded-xl border-2 border-green-500 bg-white px-6 py-3 text-lg text-gray-900 font-semibold shadow-md">
+            <div class="flex justify-center items-center gap-2 mt-4 text-2xl">
+              <span> \(\dfrac{a}{b}\)</span>
+              <span> dengan</span>
+              <span> \(b \neq 0\)</span>
+            </div>
+
+            <div>
+              <p>
+                Keterangan:
+              </p>
+              <div>
+                <p class="flex gap-2 items-center">\( a = \) Bilangan</p>
+                <p class="flex gap-2 items-center">\( b = \) Penyebut</p>
+              </div>
+
+            </div>
           </div>
 
+
           <div class="grid gap-8 md:grid-cols-2">
-            {{-- Pecahan Senilai --}}
-            <div class="rounded-xl border border-sky-100 bg-white p-6 shadow-md">
-              <h3 class="mb-4 flex items-center gap-3 text-2xl font-bold text-sky-700">🔁 Pecahan Senilai
+
+            <div class="rounded-2xl border border-sky-200 bg-gradient-to-br from-white to-sky-50 p-6 shadow-lg">
+              <!-- Judul -->
+              <h3 class="mb-4 flex items-center gap-3 text-3xl font-extrabold text-sky-800">
+                Pecahan Senilai
               </h3>
-              <p class="mb-4 text-sky-900/90">Pecahan yang kelihatan beda, tapi nilainya sama. Caranya
-                gampang: kalikan atau bagi pembilang dan penyebut dengan angka yang sama.</p>
-              <div class="rounded-lg bg-sky-50 p-4">
-                <p class="font-semibold text-sky-800">Contoh: Cari teman senilai dari <code
-                    class="bg-white px-1">1/2</code></p>
-                <p class="mt-2">👉 Dikali 3: <code class="bg-white px-1 font-mono">(1 × 3) / (2 × 3) =
-                    3/6</code></p>
-                <p class="mt-1">👉 Dikali 5: <code class="bg-white px-1 font-mono">(1 × 5) / (2 × 5) =
-                    5/10</code></p>
-                <p class="mt-3 font-semibold text-sky-800">Jadi, <code class="bg-sky-100 px-1">1/2</code>, <code
-                    class="bg-sky-100 px-1">3/6</code>,
-                  dan <code class="bg-sky-100 px-1">5/10</code> itu senilai!</p>
+
+              <!-- Deskripsi -->
+              <p class="mb-6 text-sky-900/80 text-lg leading-relaxed">
+                Pecahan senilai dapat diperoleh dengan mengalikan atau membagi pembilang
+                dan penyebut dengan bilangan yang sama kecuali 1.
+              </p>
+
+              <!-- Box Contoh -->
+              <div class="rounded-xl bg-white p-6 border border-sky-100 shadow-inner">
+                <p class="font-semibold text-sky-700 mb-4 text-lg">
+                  Contoh:
+                </p>
+                <div class="bg-sky-50 rounded-lg px-4 py-3 text-sky-900 text-base mb-6">
+                  Tentukan dua buah pecahan yang senilai dengan
+                  \(\tfrac{20}{40}\)
+                </div>
+
+                <!-- Penyelesaian -->
+                <div class="space-y-4 text-lg text-sky-800">
+                  <p><i>Penyelesaian:</i></p>
+
+                  <p>\[ 
+                    \frac{20}{40} = \frac{20 \times 2}{40 \times 2} = \frac{40}{80}
+                    \]</p>
+
+                  <p>\[
+                    \frac{20}{40} = \frac{20 : 2}{40 : 2} = \frac{10}{20}
+                    \]</p>
+
+                  <div class="bg-sky-100 rounded-lg px-4 py-3 font-semibold">
+                    \[
+                    \text{Jadi, } \frac{20}{40} = \frac{40}{80} = \frac{10}{20}
+                    \]
+                  </div>
+                </div>
               </div>
             </div>
 
-            {{-- Menyederhanakan Pecahan --}}
+
             <div class="rounded-xl border border-sky-100 bg-white p-6 shadow-md">
               <h3 class="mb-4 flex items-center gap-3 text-2xl font-bold text-sky-700">🧩 Menyederhanakan
                 Pecahan</h3>
@@ -289,6 +440,8 @@
                   Keren!</p>
               </div>
             </div>
+
+
           </div>
 
           {{-- Operasi Pecahan --}}

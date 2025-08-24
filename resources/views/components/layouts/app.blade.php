@@ -8,6 +8,12 @@
   @vite('resources/css/app.css')
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
+    [x-cloak] {
+      display: none !important
+    }
+  </style>
+
+  <style>
     .hamburger {
       cursor: pointer;
       width: 24px;
@@ -54,6 +60,8 @@
       transform: rotate(-45deg) translateY(6px) translate(-6px);
     }
   </style>
+
+
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
 </head>
@@ -66,8 +74,13 @@
         <div class="hidden items-center space-x-8 text-lg md:flex">
           <a href="{{ route('home') }}" class="text-sky-600 hover:text-red-400">Home</a>
 
+
+          <a href="{{ route('master-pembahasan') }}" class="text-sky-600 hover:text-red-400">Pembahasan</a>
+          <a href="{{ route('master-soal') }}" class="text-sky-600 hover:text-red-400">Soal</a>
+          <a href="{{ route('master-model') }}" class="text-sky-600 hover:text-red-400">Model</a>
           <a href="{{ route('master-materi') }}"
             class="rounded-md bg-sky-600 px-6 py-2 text-white transition-colors hover:bg-red-400">Materi</a>
+
         </div>
         <div class="md:hidden">
           <button @click="open = !open" class="hamburger focus:outline-none" :class="{ 'open': open }">

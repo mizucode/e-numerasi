@@ -11,6 +11,17 @@ Route::get('/', function () {
 
 Route::get('/materi', [MateriController::class, 'index'])->name('master-materi');
 
+Route::get('/pembahasan', function () {
+    return view('components.page.master-pembahasan', );
+})->name('master-pembahasan');
+Route::get('/soal', function () {
+    return view('components.page.master-soal', );
+})->name('master-soal');
+Route::get('/model', function () {
+    return view('components.page.master-model', );
+})->name('master-model');
+
+
 
 // Sub Materi
 
@@ -62,3 +73,18 @@ Route::get('/materi/geometri-dan-pengukuran/pembahasan', function () {
 Route::get('/materi/data-dan-ketidakpastian/pembahasan', function () {
     return view('components.page.pembahasan.data-dan-ketidakpastian', );
 })->name('materi-data-dan-ketidakpastian-pembahasan');
+
+
+
+
+Route::get('/materi/aljabar/pembahasan', function () {
+    return view('components.page.pembahasan.aljabar', );
+})->name('materi-aljabar-pembahasan');
+
+Route::get('/materi/aljabar/soal', function () {
+    return view('components.page.soal.aljabar', );
+})->name('materi-aljabar-soal');
+
+Route::get('/materi/aljabar/model', function () {
+    return view('components.page.model.aljabar', );
+})->name('materi-aljabar-model');
