@@ -9,7 +9,7 @@
             {{-- HERO / HEADER --}}
             <header class="mb-14 text-center">
                 <h1 class="text-4xl md:text-5xl font-extrabold text-sky-600 tracking-tight drop-shadow-sm">
-                    🎲 Petualangan Seru di Dunia Data & Peluang!
+                    Data dan Ketidakpastian
                 </h1>
                 <p class="mt-4 text-lg text-sky-900/80 max-w-3xl mx-auto leading-relaxed">
                     Yuk, jelajah bareng konsep penting statistika—dari data dan cara menyajikannya, sampai peluang
@@ -28,86 +28,153 @@
                         Statistika
                     </h2>
 
-                    <p class="text-sky-900 text-lg mb-6 leading-relaxed">
-                        Statistika membantu kita mengumpulkan, menyusun, menampilkan, dan mengolah data agar mudah
-                        dipahami. Istilah-istilah kunci di bawah ini akan sering kamu temui.
-                    </p>
-
                     {{-- Peta Konsep Utama --}}
                     <div class="bg-sky-600 p-4 rounded-xl shadow-lg text-white text-center mb-8">
-                        <p class="text-sm font-semibold opacity-90 mb-1">PETA KONSEP UTAMA</p>
-                        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-3 text-sky-50">
-                            <div class="bg-sky-500/40 rounded-lg p-3">
-                                <p class="font-semibold">Data</p>
-                                <p class="text-xs opacity-90">Keterangan/informasi dari penelitian.</p>
+                        <p class="text-3xl font-semibold mb-4">Data</p>
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 text-xl text-sky-600">
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Pengertian Data</p>
+                                <p class="text-justify">Data adalah keterangan atau informasi yang diperoleh dari
+                                    suatu penelitian dan diperlukan untuk mendapatkan gambaran suatu keadaan setelah
+                                    dilakukan pengolahan data.</p>
                             </div>
-                            <div class="bg-sky-500/40 rounded-lg p-3">
-                                <p class="font-semibold">Pengumpulan</p>
-                                <p class="text-xs opacity-90">Observasi, wawancara, angket.</p>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Pengumpulan Data</p>
+                                <p class="text-justify">Pengumpulan data adalah proses untuk mendapatkan data yang
+                                    diperlukan. Pengumpulan data dapat dilakukan melalui pengamatan langsung
+                                    (observasi), wawancara (interview), angket, dan lain-lain.</p>
                             </div>
-                            <div class="bg-sky-500/40 rounded-lg p-3">
-                                <p class="font-semibold">Populasi & Sampel</p>
-                                <p class="text-xs opacity-90">Seluruh objek vs sebagian.</p>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Pengurutan Data</p>
+                                <p class="text-justify">Pengurutan data adalah proses mengurutkan data agar
+                                    tersusun secara sistematis dari data terkecil ke data terbesar.</p>
                             </div>
-                            <div class="bg-sky-500/40 rounded-lg p-3">
-                                <p class="font-semibold">Pengolahan</p>
-                                <p class="text-xs opacity-90">Mean, median, modus, jangkauan.</p>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Populasi dan Sample</p>
+                                <p class="text-justify">Populasi adalah keseluruhan objek penelitian, sedangkan
+                                    sampel adalah himpunan bagian dari populasi.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Kesimpulan</p>
+                                <p class="text-justify">Kesimpulan merupakan hasil akhir dari proses penelitian
+                                    yang menggambarkan jawaban dari permasalahan yang diteliti.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bg-sky-600 p-4 rounded-xl shadow-lg text-white text-center mb-8">
+                        <p class="text-3xl font-semibold mb-4">Penyajian Data</p>
+                        <div class="grid sm:grid-cols-2 text-xl md:grid-cols-4 gap-3 text-sky-600">
+                            <div class="bg-white  rounded-lg p-3">
+                                <p class="font-semibold pb-4">Tabel</p>
+                                <p class="text-justify">Tabel adalah cara penyajian data dalam bentuk baris dan kolom.
+                                </p>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 ">
+                                <p class="font-semibold pb-4">Diagram Batang</p>
+                                <p class="text-justify">Diagram batang adalah diagram yang menyajikan data bentuk batang
+                                    atau kotak.
+                                </p>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Diagram Garis</p>
+                                <p class="text-justify">Diagram garis adalah diagram yang penyajian datanya dalam bentuk
+                                    garis.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Diagram Lingkaran</p>
+                                <p class="text-justify">Diagram lingkaran adalah diagram yang menyajikan data dalam
+                                    bentuk lingkaran
+                                    yang dibagi menjadi beberapa bagian.</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-semibold pb-4">Poligon dan Histogram</p>
+                                <p class="text-justify">Histogram merupakan diagram yang menyajikan data dalam bentuk
+                                    batang seperti
+                                    halnya diagram batang, namun data yang satu dengan yang lainnya dibuat tidak
+                                    terpisah. Sedangkan polygon adalah diagram yang menyatakan data dalam bentuk garis
+                                    yang dihubungkan antar nilai tengah setiap data yang berada diatas histogram.</p>
                             </div>
                         </div>
                     </div>
 
                     {{-- Penyajian Data --}}
                     <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 hover:shadow-lg transition">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-4 flex items-center gap-3">📊 Cara Menyajikan Data
+                        <h3 class="font-bold text-2xl text-center text-sky-700 mb-4 flex items-center gap-3">Pengolahan
+                            Data
                         </h3>
-                        <p class="text-sky-900 mb-6 leading-relaxed">
-                            Data bisa ditampilkan dalam berbagai bentuk supaya lebih mudah dibaca dan dibandingkan.
-                            Pilih bentuk yang paling cocok dengan tujuanmu.
-                        </p>
-                        <div class="grid md:grid-cols-3 gap-4 text-center">
-                            <div class="bg-sky-50 border-2 border-sky-200 p-4 rounded-lg">
-                                <p class="font-bold text-xl text-sky-700">Tabel</p>
-                                <p class="text-sm text-sky-700/80 mt-1">Baris–kolom, ringkas & rapi.</p>
+
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-sky-50 border-2 border-sky-200 text-sky-700 p-4 rounded-lg">
+                                <p class="font-bold text-xl ">Mean</p>
+                                <p class="text-sm mt-1">Untuk menghitung rata-rata, jumlah seluruh data
+                                    dibagi dengan banyak data.</p>
+                                <p>\[
+                                    \bar{x} = \frac{\sum x}{n}
+                                    \]
+                                </p>
+                                <div class="text-base  leading-relaxed">
+                                    <p><strong>Keterangan:</strong></p>
+                                    <p>𝑥̄ = rata-rata</p>
+                                    <p>Σx = jumlah data</p>
+                                    <p>n = banyak data</p>
+
+                                    <p class="mt-4">Untuk menghitung rata-rata gabungan digunakan rumus berikut:</p>
+
+                                    <p class="mt-2 text-center">
+                                        𝑥̄<sub>total</sub> =
+                                        <span style="display:inline-block; vertical-align:middle; text-align:center;">
+                                            <span
+                                                style="border-bottom:1px solid #000; display:inline-block; padding:0 5px;">
+                                                𝑥̄<sub>1</sub>n<sub>1</sub> + 𝑥̄<sub>2</sub>n<sub>2</sub>
+                                            </span>
+                                            <br>
+                                            n<sub>1</sub> + n<sub>2</sub>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="text-base  leading-relaxed">
+                                    <p><strong><em>Keterangan:</em></strong></p>
+                                    <p>𝑥̄<sub>1</sub> = rata-rata kelompok 1</p>
+                                    <p>𝑥̄<sub>2</sub> = rata-rata kelompok 2</p>
+                                    <p>n<sub>1</sub> = banyak anggota kelompok 1</p>
+                                    <p>n<sub>2</sub> = banyak anggota kelompok 2</p>
+                                </div>
+
+
                             </div>
                             <div class="bg-amber-50 border-2 border-amber-200 p-4 rounded-lg">
-                                <p class="font-bold text-xl text-amber-700">Diagram Batang/Garis</p>
-                                <p class="text-sm text-amber-700/80 mt-1">Bandingkan kategori & tren waktu.</p>
+                                <p class="font-bold text-xl text-amber-700">Modus</p>
+                                <p class="text-sm text-amber-700/80 mt-1">Modus merupakan data yang paling sering muncul
+                                    dalam Kumpulan data atau nilai yang memiliki frekuensi yang terbesar.</p>
                             </div>
-                            <div class="bg-rose-50 border-2 border-rose-200 p-4 rounded-lg">
-                                <p class="font-bold text-xl text-rose-700">Lingkaran, Histogram, Poligon</p>
-                                <p class="text-sm text-rose-700/80 mt-1">Proporsi & data berkelompok.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- Rumus-Rumus Pengolahan Data --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-4">✨ Rumus Penting (Data Tak Berkelompok)</h3>
-
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="bg-sky-50 border border-sky-100 p-6 rounded-lg">
-                                <h4 class="text-lg font-semibold text-sky-800 mb-2">Rata-rata (Mean)</h4>
-                                <p class="text-sm text-sky-900/80">Rumus: \( \bar{x} = \dfrac{\sum x}{n} \)</p>
-                                <p class="text-sm text-sky-900/80 mt-1">Gabungan: \( \bar{x}_{\text{total}} =
-                                    \dfrac{\bar{x}_1 n_1 + \bar{x}_2 n_2}{n_1+n_2} \)</p>
-                            </div>
-                            <div class="bg-sky-50 border border-sky-100 p-6 rounded-lg">
-                                <h4 class="text-lg font-semibold text-sky-800 mb-2">Median, Modus, Jangkauan</h4>
-                                <ul class="text-sm text-sky-900/80 list-disc pl-5 space-y-1">
-                                    <li><strong>Median</strong>: nilai tengah setelah diurutkan (genap → rata-rata 2
-                                        tengah).</li>
-                                    <li><strong>Modus</strong>: nilai yang paling sering muncul.</li>
-                                    <li><strong>Jangkauan</strong>: \( J = x_{\max} - x_{\min} \).</li>
+                            <div class="bg-rose-50 border-2 border-rose-200 p-4 text-justify rounded-lg">
+                                <p class="font-bold text-xl text-rose-700">Median</p>
+                                <p class="text-sm text-rose-700/80 mt-1">Median merupakan nilai Tengah suatu data yang
+                                    telah diurutkan dari data terkecil hingga data terbesar. Cara menentukan median
+                                    suatu data, pertama data harus di urutkan. Kemudian, dari data yang sudah diurutkan
+                                    tersebut ditentukan nilai tengahnya.</p>
+                                <ul class="list-disc pl-5 text-rose-700/80">
+                                    <li>Jika banyak data ganjil, nilai median dapat langsung diperoleh.</li>
+                                    <li>Jika banyak data genap, nilai median sama dengan jumlah kedua data di tengah
+                                        dibagi 2.</li>
                                 </ul>
                             </div>
-                        </div>
+                            <div class="bg-rose-60 border-2 border-rose-600 p-4 text-justify rounded-lg">
+                                <p class="font-bold text-xl text-rose-700">Jangkauan</p>
+                                <p class="text-sm text-rose-700/80 mt-1">Jangkauan adalah selisih nilai terbesar dan
+                                    terkecil dari sekumpulan data.</p>
+                                <p class="text-sm text-rose-700/80 mt-1">\[
+                                    J = x_{\text{maks}} - x_{\text{min}}
+                                    \]
+                                </p>
 
-                        <div class="mt-4 bg-sky-50 border border-sky-100 p-4 rounded-lg text-sm">
-                            <p class="font-semibold text-sky-800">Contoh cepat:</p>
-                            <p class="mt-1">Data: 6, 7, 8, 9, 10 → \( \bar{x}=8 \), median = 8, modus = – (tidak ada),
-                                jangkauan = 4.</p>
+                            </div>
                         </div>
                     </div>
+
+
                 </section>
 
                 {{-- B. PELUANG --}}
@@ -118,173 +185,120 @@
                         Peluang
                     </h2>
 
-                    <p class="text-sky-900 text-lg mb-6 leading-relaxed">
-                        Peluang membantumu menaksir “seberapa mungkin” suatu kejadian terjadi. Mulai dari ruang
-                        sampel hingga kejadian saling lepas/bebas.
-                    </p>
-
                     <div class="grid md:grid-cols-2 gap-8">
                         {{-- Ruang Sampel & Peluang --}}
                         <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
-                            <h3 class="font-bold text-2xl text-sky-700 mb-4">🎯 Ruang Sampel & Peluang</h3>
+                            <h3 class="font-bold text-2xl text-sky-700 mb-4">Titik Sample dan Ruang Sample</h3>
                             <p class="text-sky-900/90 mb-3">
-                                Ruang sampel \(S\) = semua hasil yang mungkin. Banyaknya anggota ruang sampel ditulis
-                                \(n(S)\).
+                                Ruang sampel adalah Kumpulan atau himpunan semua hasil yang mungkin muncul ada suatu
+                                percobaan. Ruang sampel dilambangkan dengan S, sedangkan anggota-anggota dari S disebut
+                                titik sampel. Banyak anggota (titik sampel) suatu ruang sampel dinyatakan dengan n(S).
+                                Cara menentukan ruang sampel dan titik sampel ada tiga, yaitu dengan mendaftar, tabel,
+                                dan diagram pohon.
                             </p>
                             <div class="bg-sky-50 p-4 rounded-lg">
-                                <p class="font-semibold text-sky-800">Rumus Peluang</p>
-                                <code
-                                    class="block bg-white border border-sky-100 p-2 rounded mt-2 font-mono text-center">
-                                    P(A) = \dfrac{n(A)}{n(S)}
-                                </code>
+                                <p class="font-semibold text-sky-800">Peluang Suatu Kejadian</p>
+                                <p class="text-sky-900/90 mb-3">
+                                    Peluang adalah nilai kemungkinan yang terjadi antara perbandingan banyaknya suatu
+                                    kejadian dengan banyaknya suatu kejadian.
+                                </p>
+                                <div class="text-base text-sky-900/90 leading-relaxed">
+                                    <p class="text-center mt-4">
+                                        P(A) =
+                                        <span style="display:inline-block; vertical-align:middle; text-align:center;">
+                                            <span
+                                                style="border-bottom:1px solid #000; display:inline-block; padding:0 5px;">
+                                                n(A)
+                                            </span>
+                                            <br>
+                                            n(S)
+                                        </span>
+                                    </p>
+
+                                    <p class="mt-6"><strong><em>Keterangan:</em></strong></p>
+                                    <p>P(A) = nilai peluang munculnya kejadian A</p>
+                                    <p>n(A) = banyaknya kejadian A</p>
+                                    <p>n(S) = banyaknya anggota ruang sampel</p>
+                                </div>
+
                             </div>
                         </div>
 
                         {{-- Frekuensi Relatif & Harapan --}}
                         <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
-                            <h3 class="font-bold text-2xl text-sky-700 mb-4">📈 Frekuensi Relatif & Harapan</h3>
-                            <ul class="text-sky-900/90 space-y-2">
-                                <li>Frekuensi relatif: \( f_r = \dfrac{\text{banyak kemunculan}}{\text{banyak
-                                    percobaan}} \)</li>
-                                <li>Frekuensi harapan: \( F_h = P(A)\times N \) untuk \(N\) percobaan.</li>
-                            </ul>
-                            <p class="text-xs text-sky-700 mt-2">Dipakai untuk memperkirakan hasil di dunia nyata.</p>
+                            <h3 class="font-bold text-2xl text-sky-700 mb-4">Frekuensi Relatif</h3>
+                            <p class="text-sky-900/90 mb-3">
+                                Frekuensi relative adalah perbandingan antara banyaknya nilai yang muncul dengan
+                                banyaknya percobaan yang dilakukan.
+                            </p>
+                            <div class="text-center my-4">
+                                \[
+                                F_t = \frac{\text{banyaknya kemunculan}}{\text{banyaknya percobaan}}
+                                \]
+                            </div>
+
                         </div>
-                    </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
+                            <h3 class="font-bold text-2xl text-sky-700 mb-4">Frekuensi Harapan</h3>
+                            <p class="text-sky-900/90 mb-3">
+                                Frekuensi harapan suatu kejadian adalah harapan banyaknya muncul suatu kejadian dari
+                                sejumlah percobaan yang dilakukan.
+                            </p>
+                            <div class="text-center my-4">
+                                \[
+                                F_h = \text{peluang} \times \text{banyaknya percobaan}
+                                \]
 
-                    {{-- Kejadian Saling Lepas & Bebas --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-4">🧠 Saling Lepas & Saling Bebas</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="bg-amber-50 border border-amber-100 p-5 rounded-lg">
-                                <h4 class="text-lg font-semibold text-amber-800 mb-2">Kejadian Saling Lepas</h4>
-                                <p class="text-sm text-amber-900/90 mb-2">Tidak bisa terjadi bersamaan.</p>
-                                <code class="block bg-white border border-amber-100 p-2 rounded font-mono text-center">
-                                    P(A \text{ atau } B) = P(A) + P(B)
-                                </code>
+                                \[
+                                = P(A) \times N
+                                \]
                             </div>
-                            <div class="bg-emerald-50 border border-emerald-100 p-5 rounded-lg">
-                                <h4 class="text-lg font-semibold text-emerald-800 mb-2">Kejadian Saling Bebas</h4>
-                                <p class="text-sm text-emerald-900/90 mb-2">Tidak saling memengaruhi.</p>
-                                <code
-                                    class="block bg-white border border-emerald-100 p-2 rounded font-mono text-center">
-                                    P(A \text{ dan } B) = P(A)\cdot P(B)
-                                </code>
-                            </div>
+
+
                         </div>
-                    </div>
-                </section>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
+                            <h3 class="font-bold text-2xl text-sky-700 mb-4">Peluang Dua Kejadian Saling Lepas</h3>
+                            <p class="text-sky-900/90 mb-3">
+                                Dua kejadian saling lepas jika dua kejadian tersebut tidak dapat terjadi secara
+                                bersamaan.
+                            </p>
+                            <div class="text-center my-4">
+                                \[
+                                P(A \; \text{atau} \; B) = P(A) + P(B)
+                                \]
+                            </div>
+                            <p class="text-sky-900/90 mb-3">
+                                <span> Keterangan: </span>
+                                <span> P(A) = peluang kejadian A</span>
+                                <span> P(B) = peluang kejadian B</span>
+                            </p>
 
-                {{-- C. CONTOH SOAL, PEMBAHASAN, & LATIHAN --}}
-                <section>
-                    <h2
-                        class="text-3xl font-bold text-sky-700 border-b-4 border-sky-400 pb-2 mb-6 flex items-center gap-3">
-                        <span class="bg-sky-100 text-sky-600 p-2 rounded-lg shadow-sm">C</span>
-                        Contoh Soal, Pembahasan, & Latihan
-                    </h2>
 
-                    {{-- Contoh 1: Warna Kesukaan --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-3">1) Tabel Frekuensi: Warna Kesukaan</h3>
-                        <p class="text-sky-900/90 text-sm">
-                            Data 16 siswa: Hijau (3), Biru (4), Cokelat (2), Merah (4), Kuning (3).
-                            (diolah dari daftar nama–warna pada soal).
-                        </p>
-                        <div class="overflow-x-auto mt-3">
-                            <table class="min-w-[420px] border border-sky-200 text-sm">
-                                <thead class="bg-sky-600 text-white">
-                                    <tr>
-                                        <th class="px-3 py-2 text-left">Warna</th>
-                                        <th class="px-3 py-2 text-left">Banyak Anak</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-sky-100">
-                                    <tr>
-                                        <td class="px-3 py-2">Hijau</td>
-                                        <td class="px-3 py-2">3</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-3 py-2">Biru</td>
-                                        <td class="px-3 py-2">4</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-3 py-2">Cokelat</td>
-                                        <td class="px-3 py-2">2</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-3 py-2">Merah</td>
-                                        <td class="px-3 py-2">4</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-3 py-2">Kuning</td>
-                                        <td class="px-3 py-2">3</td>
-                                    </tr>
-                                    <tr class="font-semibold bg-sky-50">
-                                        <td class="px-3 py-2">Jumlah</td>
-                                        <td class="px-3 py-2">16</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
                         </div>
-                        <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4 mt-4">
-                            <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Pembahasan
-                            </summary>
-                            <div class="mt-2 text-sm leading-relaxed">
-                                Hitung frekuensi tiap warna dari daftar pada soal, lalu jumlahkan: \(3+4+2+4+3=16\).
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100">
+                            <h3 class="font-bold text-2xl text-sky-700 mb-4">Peluang Dua Kejadian Saling Bebas</h3>
+                            <p class="text-sky-900/90 mb-3">
+                                Dua kejadian misal kejadian A dan B dikatakan saling bebas jika kejadian A tidak
+                                memengaruhi terjadi atau tidak terjadinya kejadian B.
+                            </p>
+                            <div class="text-center my-4">
+                                \[
+                                P(A \; \text{dan} \; B) = P(A) \times P(B)
+                                \]
                             </div>
-                        </details>
-                    </div>
 
-                    {{-- Contoh 2: Membaca Diagram Batang Usia --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-3">2) Membaca Diagram Batang: Usia 4 Orang</h3>
-                        <p class="text-sky-900/90 text-sm">
-                            Diketahui (dari diagram): Fazri 15, Bunga 20, Nadif 25, Syela 10. Jawab pernyataan: selisih
-                            Bunga–Syela = 10 (bukan 15),
-                            paling tua = Nadif, termuda = Syela.
-                        </p>
-                    </div>
 
-                    {{-- Contoh 3: Frekuensi Harapan di Kelas --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-3">3) Frekuensi Harapan (Kelas VIII)</h3>
-                        <p class="text-sky-900/90 text-sm">
-                            Jumlah siswa = 30. Peluang terpilih siswa usia &lt; 13 tahun = \( \tfrac{1}{5} \).
-                            Perkiraan banyak siswa usia &lt; 13: \( \tfrac{1}{5}\times 30 = 6 \) siswa. Sisanya \(24\).
-                        </p>
-                    </div>
 
-                    {{-- Contoh 4: Estimasi Kerusakan Lampu --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-3">4) Estimasi dari Sampel (Lampu Pijar)</h3>
-                        <p class="text-sky-900/90 text-sm">
-                            Dari 100 lampu diuji, 5 rusak → peluang rusak \(\approx \tfrac{5}{100}\).
-                            Perkiraan pada 3.000 lampu: \( \tfrac{5}{100}\times 3000 = 150 \) lampu rusak. (Jawaban:
-                            150)
-                        </p>
-                    </div>
 
-                    {{-- Contoh 5: Membandingkan Biaya Berlangganan --}}
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-                        <h3 class="font-bold text-2xl text-sky-700 mb-3">5) Perbandingan Biaya: Dua Majalah</h3>
-                        <div class="grid md:grid-cols-2 gap-3 text-sm">
-                            <div class="p-3 rounded-md border border-sky-100 bg-sky-50/40">
-                                <p class="font-medium">Gaya Hidup Remaja</p>
-                                <p>Bayar 20 edisi × Rp15.000 = <strong>Rp300.000</strong></p>
-                            </div>
-                            <div class="p-3 rounded-md border border-sky-100 bg-sky-50/40">
-                                <p class="font-medium">Seputar Remaja</p>
-                                <p>Bayar 18 edisi × Rp15.500 = <strong>Rp279.000</strong></p>
-                            </div>
                         </div>
-                        <p class="text-sky-900/90 text-sm mt-2">
-                            Lebih hemat “Seputar Remaja” (selisih Rp21.000).
-                        </p>
                     </div>
 
 
                 </section>
 
+                {{-- C. CONTOH SOAL, PEMBAHASAN, & LATIHAN --}}
+             
                 {{-- CTA --}}
                 <section class="text-center py-10">
                     <div

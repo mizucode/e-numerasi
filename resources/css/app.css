@@ -7,3 +7,57 @@
 .container {
     max-width: 1400px;
 }
+
+.math-bg-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234fc3f7' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.math-bg-pattern-dark {
+    @apply bg-violet-100/10;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234fc3f7' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.math-bg-pattern-grid {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M0 0H40 M0 0V40' fill='none' stroke='%231d4ed8' stroke-opacity='0.2' stroke-width='1' shape-rendering='crispEdges'/%3E%3C/svg%3E");
+}
+
+/* tailwind.css kamu */
+@layer utilities {
+    /* Grid tipis */
+    .bg-grid-bw {
+        @apply bg-sky-100/10;
+        background-image: linear-gradient(
+                rgb(0 0 0 / 0.01) 1px,
+                transparent 1px
+            ),
+            linear-gradient(90deg, rgb(0 0 0 / 0.01) 1px, transparent 1px);
+        background-size: 40px 40px;
+        background-position: top left;
+    }
+    .bg-grid-700 {
+        @apply bg-sky-700;
+        background-image: linear-gradient(
+                rgb(255 255 255 / 0.1) 1px,
+                transparent 1px
+            ),
+            linear-gradient(90deg, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+        background-size: 40px 40px;
+        background-position: top left;
+    }
+
+    /* Ada garis mayor lebih tebal tiap 5 kotak */
+    .bg-grid-bw-major {
+        background-color: #fff;
+        background-image:
+      /* minor */ linear-gradient(
+                #00000022 1px,
+                transparent 1px
+            ),
+            linear-gradient(90deg, #00000022 1px, transparent 1px),
+            /* major */ linear-gradient(#00000066 1.5px, transparent 1.5px),
+            linear-gradient(90deg, #00000066 1.5px, transparent 1.5px);
+        /* minor 20px, major 100px (setiap 5×) */
+        background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+        background-position: top left;
+    }
+}

@@ -1,236 +1,507 @@
 <x-layouts.app>
   <x-slot:title>
-    Data & Ketidakpastian | E-numerasi
+    Pembahasan Data dan Ketidakpastian
   </x-slot:title>
 
-  <div class="bg-sky-50 min-h-screen">
+  <div class="bg-grid-bw min-h-screen">
     <div class="container mx-auto px-6 py-10">
 
-      {{-- HERO / HEADER --}}
-      <header class="mb-14 text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-sky-600 tracking-tight drop-shadow-sm">
-          🎲 Soal dan Pembahasan!
-        </h1>
-        <p class="mt-4 text-lg text-sky-900/80 max-w-3xl mx-auto leading-relaxed">
-          Yuk, jelajah bareng konsep penting statistika—dari data dan cara menyajikannya, sampai peluang
-          dan frekuensi harapan—dengan gaya yang asyik, simpel, dan penuh contoh nyata.
+      {{-- HEADER --}}
+      <header class="mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-sky-600 tracking-tight">Pembahasan dan Contoh Soal
+          —
+          Materi
+          Data dan Ketidakpastian</h1>
+        <p class="mt-3 text-lg text-sky-900/80 max-w-3xl mx-auto leading-relaxed">
+          Kumpulan contoh soal pemahaman, penerapan, dan penalaran lengkap dengan pembahasan.
         </p>
-
       </header>
 
       <main class="space-y-16">
 
-        {{-- A. STATISTIKA --}}
+
+        {{-- A. Contoh Soal Pemahaman 1 --}}
         <section>
-          <h2 class="text-3xl font-bold text-sky-700 border-b-4 border-sky-400 pb-2 mb-6 flex items-center gap-3">
-            <span class="bg-sky-100 text-sky-600 p-2 rounded-lg shadow-sm">A</span>
-            Statistika
+          <h2
+            class="text-2xl md:text-3xl font-bold text-sky-700 flex items-center gap-3 border-b-4 border-sky-400 pb-2 mb-6">
+            <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-lg">A</span>
+            Contoh Soal Pemahaman
           </h2>
 
-          <p class="text-sky-900 text-lg mb-6 leading-relaxed">
-            Statistika membantu kita mengumpulkan, menyusun, menampilkan, dan mengolah data agar mudah
-            dipahami. Istilah-istilah kunci di bawah ini akan sering kamu temui.
-            :contentReference[oaicite:2]{index=2}
-          </p>
+          <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-sky-800 mb-3">
+                1. Nazril menanyakan warna kesukaan kepada teman-temannya.
+              </h3>
 
-          {{-- Peta Konsep Utama --}}
+              <p class="text-sky-900/90 leading-relaxed text-lg mb-4">
+                Dia kemudian mencatat di buku tulisnya sebagai berikut:
+              </p>
 
+              <ul class="list-disc list-inside text-sky-900/90 leading-relaxed mb-4">
+                <li>Zafran – hijau</li>
+                <li>Eza – biru</li>
+                <li>Kimmy – cokelat</li>
+                <li>Alena – merah</li>
+                <li>Raihan – hijau</li>
+                <li>Nada – biru</li>
+                <li>Rasyid – biru</li>
+                <li>Amar – kuning</li>
+                <li>Rayan – kuning</li>
+                <li>Tristan – hijau</li>
+                <li>Yuki – merah</li>
+                <li>Diya – merah</li>
+                <li>Akta – cokelat</li>
+                <li>Nazwa – biru</li>
+                <li>Keneth – merah</li>
+                <li>Vender – kuning</li>
+              </ul>
 
-          {{-- Latihan Terbimbing (dengan Kunci Tersembunyi) --}}
-          <div class="bg-white p-6 rounded-xl shadow-md border border-sky-100 mt-8">
-            <h3 class="font-bold text-2xl text-sky-700 mb-4">📝 Latihan Terbimbing</h3>
+              <p class="text-sky-900/90 leading-relaxed text-lg mb-4">
+                Nazril kemudian membuat tabel frekuensi yang menunjukkan hasil pengumpulan data mengenai warna kesukaan
+                teman-temannya.
+                Isilah titik-titik pada tabel berikut ini.
+              </p>
 
-            {{-- Latihan 1: Market Day --}}
-            <article class="space-y-2">
-              <h4 class="text-lg font-semibold text-sky-800">(1) Market Day — Banyak Kue Terjual</h4>
-              <div class="overflow-x-auto">
-                <table class="min-w-[520px] border border-sky-200 text-sm">
-                  <thead class="bg-sky-600 text-white">
+              <!-- Tabel Awal -->
+              <div class="overflow-x-auto mb-6">
+                <table class="min-w-full border border-sky-200 text-center text-lg">
+                  <thead class="bg-sky-50">
                     <tr>
-                      <th class="px-3 py-2 text-left">Nama Siswa</th>
-                      <th class="px-3 py-2 text-left">Banyak Kue</th>
+                      <th class="border border-sky-200 px-4 py-2">Warna Kesukaan</th>
+                      <th class="border border-sky-200 px-4 py-2">Banyak Anak yang Menyukainya</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-sky-100">
+                  <tbody>
                     <tr>
-                      <td class="px-3 py-2">Nazwa Conita Anggraeni</td>
-                      <td class="px-3 py-2">12</td>
+                      <td class="border border-sky-200 px-4 py-2">Hijau</td>
+                      <td class="border border-sky-200 px-4 py-2">3</td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">Kirana Putri Permana</td>
-                      <td class="px-3 py-2">7</td>
+                      <td class="border border-sky-200 px-4 py-2">Biru</td>
+                      <td class="border border-sky-200 px-4 py-2">…</td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">Alenna Kimberly Queen</td>
-                      <td class="px-3 py-2">8</td>
+                      <td class="border border-sky-200 px-4 py-2">Cokelat</td>
+                      <td class="border border-sky-200 px-4 py-2">…</td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">Rayyan Putra Suryana</td>
-                      <td class="px-3 py-2">11</td>
+                      <td class="border border-sky-200 px-4 py-2">Merah</td>
+                      <td class="border border-sky-200 px-4 py-2">…</td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">Insan Budiman</td>
-                      <td class="px-3 py-2">13</td>
+                      <td class="border border-sky-200 px-4 py-2">Kuning</td>
+                      <td class="border border-sky-200 px-4 py-2">…</td>
                     </tr>
-                    <tr>
-                      <td class="px-3 py-2">Muhamad Akta Hermansyah</td>
-                      <td class="px-3 py-2">9</td>
-                    </tr>
-                    <tr>
-                      <td class="px-3 py-2">Karina Putri Isnaini</td>
-                      <td class="px-3 py-2">12</td>
+                    <tr class="font-bold bg-sky-50">
+                      <td class="border border-sky-200 px-4 py-2">Jumlah</td>
+                      <td class="border border-sky-200 px-4 py-2">16</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <ul class="list-disc pl-5 text-sm space-y-1 mt-2">
-                <li>Banyak siswa yang menjual &gt; 10 kue ada 4 siswa.</li>
-                <li>Banyak siswa yang menjual &lt; 10 kue ada 4 siswa.</li>
-                <li>Jumlah kue terjual seluruhnya 70 kue.</li>
-                <li>Jumlah kue terjual seluruhnya 72 kue.</li>
-              </ul>
-              <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4">
-                <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Kunci &
-                  Pembahasan</summary>
-                <div class="mt-2 text-sm">
-                  Total: \(12+7+8+11+13+9+12=72\). <br>
-                  &gt;10: {12, 11, 13, 12} → 4 (benar). <br>
-                  &lt;10: {7, 8, 9} → 3 (pernyataan 4 salah). <br>
-                  Jadi, “72 kue” benar.
-                </div>
-              </details>
-            </article>
 
-            {{-- Latihan 2: Dua Kotak Tiket --}}
-            <article class="space-y-2 mt-6">
-              <h4 class="text-lg font-semibold text-sky-800">(2) Dua Kotak Tiket</h4>
-              <p class="text-sm text-sky-900/90">
-                Kotak kecil: 20 tiket (1–20), kotak besar: 100 tiket (1–100). Peluang ambil nomor 17
-                lebih besar di kotak mana?
+              <!-- Pembahasan -->
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl text-lg">
+                <div class="font-semibold text-sky-800 mb-2">Pembahasan:</div>
+                <p class="text-sky-900/90 mb-2">Berdasarkan data di soal, kita bisa menghitung jumlah anak yang menyukai
+                  warna kesukaannya sebagai berikut:</p>
+
+                <ol class="list-decimal list-inside space-y-1 text-sky-900/90">
+                  <li>Anak yang menyukai warna hijau adalah Zafran, Raihan, dan Tristan sehingga banyak anak yang
+                    menyukai warna hijau ada 3 orang.</li>
+                  <li>Anak yang menyukai warna biru adalah Eza, Nada, Rasyid, dan Nazwa sehingga banyak anak yang
+                    menyukai warna biru ada 4 orang.</li>
+                  <li>Anak yang menyukai warna cokelat adalah Kimmy dan Akta sehingga banyak anak yang menyukai warna
+                    cokelat ada 2 orang.</li>
+                  <li>Anak yang menyukai warna merah adalah Alena, Yuki, Diya, dan Keneth sehingga banyak anak yang
+                    menyukai warna merah ada 4 orang.</li>
+                  <li>Anak yang menyukai warna kuning adalah Amar, Rayan, dan Vender sehingga banyak anak yang menyukai
+                    warna kuning ada 3 orang.</li>
+                  <li>Jumlah seluruh teman yang didata oleh Nazril adalah 3 + 4 + 2 + 4 + 3 = 16 orang.</li>
+                </ol>
+
+                <p class="mt-3 text-sky-900/90">Jadi, jawaban yang benar adalah sebagai berikut:</p>
+
+                <!-- Tabel Hasil Akhir -->
+                <div class="overflow-x-auto mt-4">
+                  <table class="min-w-full border border-sky-200 text-center text-lg">
+                    <thead class="bg-sky-50">
+                      <tr>
+                        <th class="border border-sky-200 px-4 py-2">Warna Kesukaan</th>
+                        <th class="border border-sky-200 px-4 py-2">Banyak Anak yang Menyukainya</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border border-sky-200 px-4 py-2">Hijau</td>
+                        <td class="border border-sky-200 px-4 py-2">3</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-sky-200 px-4 py-2">Biru</td>
+                        <td class="border border-sky-200 px-4 py-2">4</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-sky-200 px-4 py-2">Cokelat</td>
+                        <td class="border border-sky-200 px-4 py-2">2</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-sky-200 px-4 py-2">Merah</td>
+                        <td class="border border-sky-200 px-4 py-2">4</td>
+                      </tr>
+                      <tr>
+                        <td class="border border-sky-200 px-4 py-2">Kuning</td>
+                        <td class="border border-sky-200 px-4 py-2">3</td>
+                      </tr>
+                      <tr class="font-bold bg-sky-50">
+                        <td class="border border-sky-200 px-4 py-2">Jumlah</td>
+                        <td class="border border-sky-200 px-4 py-2">16</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="bg-white rounded-2xl mt-8 border border-sky-100 shadow-md overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-sky-800 mb-3">
+                2. Diagram batang di bawah ini menunjukkan usia dari 4 orang.
+              </h3>
+
+              <div class="flex justify-center my-4">
+                <img src="{{ asset('images/diagram-usia.png') }}" alt="Diagram Usia" class="rounded-lg border">
+              </div>
+
+              <p class="text-sky-900/90 leading-relaxed text-lg mb-4">
+                Berdasarkan diagram batang di atas, berilah tanda centang (✓) pada kolom Benar atau Salah berdasarkan
+                pernyataan berikut ini.
               </p>
-              <ol class="list-decimal pl-5 text-sm space-y-1">
-                <li>Kotak kecil (20 tiket)</li>
-                <li>Kotak besar (100 tiket)</li>
-                <li>Keduanya sama</li>
-                <li>Tidak bisa ditentukan</li>
-              </ol>
-              <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4">
-                <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Kunci &
-                  Pembahasan</summary>
-                <div class="mt-2 text-sm">
-                  \(P_{20}=\frac{1}{20}=0{,}05\) dan \(P_{100}=\frac{1}{100}=0{,}01\).
-                  Lebih besar di kotak kecil → <strong>Jawaban: (1)</strong>.
-                </div>
-              </details>
-            </article>
 
-            {{-- Latihan 3: Distribusi Nilai --}}
-            <article class="space-y-2 mt-6">
-              <h4 class="text-lg font-semibold text-sky-800">(3) Distribusi Nilai Kelas VIII-B</h4>
-              <div class="overflow-x-auto">
-                <table class="min-w-[420px] border border-sky-200 text-sm">
-                  <thead class="bg-sky-600 text-white">
+              <!-- Tabel Pernyataan (kosong seperti soal) -->
+              <div class="overflow-x-auto mb-6">
+                <table class="min-w-full border border-sky-200 text-center text-lg">
+                  <thead class="bg-sky-50">
                     <tr>
-                      <th class="px-3 py-2 text-left">Nilai</th>
-                      <th class="px-3 py-2 text-left">Frekuensi</th>
+                      <th class="border border-sky-200 px-4 py-2">Pernyataan</th>
+                      <th class="border border-sky-200 px-4 py-2">Benar</th>
+                      <th class="border border-sky-200 px-4 py-2">Salah</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-sky-100">
+                  <tbody>
                     <tr>
-                      <td class="px-3 py-2">60</td>
-                      <td class="px-3 py-2">6</td>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Selisih usia Bunga dan Syela adalah 15 tahun
+                      </td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">70</td>
-                      <td class="px-3 py-2">8</td>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Usia Nadif yang paling tua di antara yang
+                        lainnya.</td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
                     </tr>
                     <tr>
-                      <td class="px-3 py-2">80</td>
-                      <td class="px-3 py-2">9</td>
-                    </tr>
-                    <tr>
-                      <td class="px-3 py-2">90</td>
-                      <td class="px-3 py-2">5</td>
-                    </tr>
-                    <tr>
-                      <td class="px-3 py-2">100</td>
-                      <td class="px-3 py-2">2</td>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Usia Fazri adalah yang termuda di antara
+                        yang lainnya.</td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <ul class="list-disc pl-5 text-sm space-y-1 mt-1">
-                <li>Siswa dengan nilai di atas rata-rata ada 24 orang.</li>
-                <li>Siswa di bawah rata-rata mengikuti remedial: 14 orang.</li>
-                <li>Median dan modus sama, yaitu 80.</li>
-              </ul>
-              <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4">
-                <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Kunci &
-                  Pembahasan</summary>
-                <div class="mt-2 text-sm space-y-1">
-                  <p>Rata-rata: \( \bar{x}=\dfrac{60\cdot6+70\cdot8+80\cdot9+90\cdot5+100\cdot2}{30}
-                    = \dfrac{2290}{30}\approx 76{,}33\).</p>
-                  <p>Di atas mean: {80, 90, 100} → \(9+5+2=16\) (pernyataan 24 salah).</p>
-                  <p>Di bawah mean: {60, 70} → \(6+8=14\) (benar).</p>
-                  <p>Median: data ke-15 & ke-16 jatuh di 80 → median 80. Modus: frekuensi terbesar 9
-                    di 80 → modus 80 (benar).</p>
-                </div>
-              </details>
-            </article>
 
-            {{-- Latihan 4: Teka-teki Bilangan --}}
-            <article class="space-y-2 mt-6">
-              <h4 class="text-lg font-semibold text-sky-800">(4) Teka-teki Bilangan</h4>
-              <p class="text-sm text-sky-900/90">“Bilangan &lt; 5000, setiap digit genap, semua digit
-                berbeda.” Carilah bilangan terbesar!</p>
-              <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4">
-                <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Kunci &
-                  Pembahasan</summary>
-                <div class="mt-2 text-sm">
-                  Digit genap: 0,2,4,6,8. Agar &lt; 5000 → ribuan = 4 (maksimal). Susun sisa digit
-                  dari terbesar tanpa mengulang:
-                  8,6,2 → <strong>4862</strong> adalah yang terbesar.
-                </div>
-              </details>
-            </article>
+              <!-- Pembahasan -->
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl text-lg mb-6">
+                <div class="font-semibold text-sky-800 mb-2">Pembahasan:</div>
+                <p class="text-sky-900/90">Dari diagram batang pada soal, data yang dapat dibaca adalah sebagai berikut:
+                </p>
+                <ul class="list-disc list-inside space-y-1 text-sky-900/90 mt-2">
+                  <li>Usia Fazri adalah 15 tahun.</li>
+                  <li>Usia Bunga adalah 20 tahun.</li>
+                  <li>Usia Nadif adalah 25 tahun.</li>
+                  <li>Usia Syela adalah 10 tahun.</li>
+                </ul>
 
-            {{-- Latihan 5: Makna “Rata-rata” pada Iklan --}}
-            <article class="space-y-2 mt-6">
-              <h4 class="text-lg font-semibold text-sky-800">(5) Memaknai “Rata-rata” pada Iklan</h4>
-              <p class="text-sm text-sky-900/90">
-                Iklan: “Dijual mobil baru & bekas, harga berbeda, <em>rata-rata</em> harga 100 jutaan.”
-                Manakah yang pasti benar?
-              </p>
-              <ol class="list-decimal pl-5 text-sm space-y-1">
-                <li>Setidaknya satu mobil harganya 100 jutaan.</li>
-                <li>Harga sebagian besar mobil 90–110 juta.</li>
-                <li>Beberapa mobil harganya &lt; 100 juta.</li>
-                <li>Setengahnya &lt; 100 juta dan setengahnya &gt; 100 juta.</li>
-              </ol>
-              <details class="group rounded-lg border border-sky-200 bg-sky-50/40 p-4">
-                <summary class="cursor-pointer font-medium text-sky-700 group-open:text-sky-900">Kunci &
-                  Pembahasan</summary>
-                <div class="mt-2 text-sm">
-                  Karena “harga berbeda” dan mean ≈ 100 juta, maka harus ada yang di bawah dan di atas
-                  100 juta.
-                  Yang <em>pasti benar</em>: <strong>(3)</strong>. (Pernyataan lain tidak selalu
-                  benar.)
-                </div>
-              </details>
-            </article>
-          </div>
+                <ul class="list-disc list-inside space-y-3 text-sky-900/90 mt-4">
+                  <li>Selisih usia Bunga dan Syela adalah 20 - 10 = 10 tahun. Jadi, pernyataan selisih usia Bunga dan
+                    Syela adalah 15 tahun, <span class="font-semibold">pernyataan salah</span>.</li>
+                  <li>Usia paling tua ditunjukkan oleh diagram batang yang paling tinggi, yaitu Nadif dengan usia 25
+                    tahun. Jadi, pernyataan usia Nadif paling tua, <span class="font-semibold">pernyataan benar</span>.
+                  </li>
+                  <li>Usia paling muda ditunjukkan oleh diagram batang yang paling pendek, yaitu Syela dengan usia 10
+                    tahun. Jadi, pernyataan usia Fazri adalah yang termuda, <span class="font-semibold">pernyataan
+                      salah</span>.</li>
+                </ul>
+              </div>
+
+              <!-- Tabel Jawaban Akhir -->
+              <p class="text-sky-900/90 text-lg mb-3">Jawaban yang benar adalah sebagai berikut:</p>
+              <div class="overflow-x-auto">
+                <table class="min-w-full border border-sky-200 text-center text-lg">
+                  <thead class="bg-sky-50">
+                    <tr>
+                      <th class="border border-sky-200 px-4 py-2">Pernyataan</th>
+                      <th class="border border-sky-200 px-4 py-2">Benar</th>
+                      <th class="border border-sky-200 px-4 py-2">Salah</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Selisih usia Bunga dan Syela adalah 15 tahun
+                      </td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                      <td class="border border-sky-200 px-4 py-2">✓</td>
+                    </tr>
+                    <tr>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Usia Nadif yang paling tua di antara yang
+                        lainnya.</td>
+                      <td class="border border-sky-200 px-4 py-2">✓</td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                    </tr>
+                    <tr>
+                      <td class="border border-sky-200 px-4 py-2 text-left">Usia Fazri adalah yang termuda di antara
+                        yang lainnya.</td>
+                      <td class="border border-sky-200 px-4 py-2"></td>
+                      <td class="border border-sky-200 px-4 py-2">✓</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+
         </section>
+
+        {{-- B. Contoh Soal Penerapan --}}
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-sky-700 flex items-center gap-3 border-b-4 border-sky-400 pb-2 mb-6">
+            <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-lg">B</span>
+            Contoh Soal Penerapan
+          </h2>
+
+          <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold  text-sky-800 mb-3">
+                1. Jumlah siswa kelas <span class="italic">VIII A</span> ada 30 orang. Kemungkinan seorang siswa yang
+                dipilih secara acak berusia di bawah 13 tahun adalah \( \frac{1}{5} \).
+              </h3>
+
+              <p class="text-sky-900/90 leading-relaxed text-lg mb-3">
+                Berilah tanda centang (√) untuk pernyataan yang benar.
+              </p>
+
+              <!-- Daftar Pernyataan (kosong seperti soal) -->
+              <ul class="space-y-2 text-lg mb-6">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-block h-5 w-5 rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang berusia di bawah 13 tahun ada 5 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-block h-5 w-5 rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang berusia di bawah 13 tahun ada 6 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-block h-5 w-5 rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang <u>bukan</u> berusia di bawah 13 tahun ada 24 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-block h-5 w-5 rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang <u>bukan</u> berusia di bawah 13 tahun ada 25 orang.</span>
+                </li>
+              </ul>
+
+              <!-- Pembahasan -->
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl text-lg mb-4">
+                <div class="font-semibold text-sky-800 mb-2">Pembahasan:</div>
+                <p class="text-sky-900/90">Jumlah seluruh siswa kelas \( VIII \) = 30 orang.</p>
+                <p class="text-sky-900/90">Kemungkinan siswa berusia di bawah 13 tahun = \( \frac{1}{5} \).</p>
+                <p class="text-sky-900/90">Banyaknya siswa berusia di bawah 13 tahun adalah \( \frac{1}{5} \times 30 = 6
+                  \) orang.</p>
+                <p class="text-sky-900/90">Kemungkinan siswa yang <u>bukan</u> berusia di bawah 13 tahun adalah \(
+                  \frac{5}{5} - \frac{1}{5} = \frac{4}{5} \).</p>
+                <p class="text-sky-900/90">Banyaknya siswa yang <u>bukan</u> berusia di bawah 13 tahun adalah \(
+                  \frac{4}{5} \times 30 = 24 \) orang.</p>
+                <p class="text-sky-900/90 mt-2">Jawaban yang benar adalah sebagai berikut.</p>
+              </div>
+
+              <!-- Daftar Pernyataan dengan Jawaban -->
+              <ul class="space-y-2 text-lg">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang berusia di bawah 13 tahun ada 5 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded border border-sky-300 bg-green-100">✓</span>
+                  <span>Banyaknya siswa yang berusia di bawah 13 tahun ada 6 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded border border-sky-300 bg-green-100">✓</span>
+                  <span>Banyaknya siswa yang <u>bukan</u> berusia di bawah 13 tahun ada 24 orang.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded border border-sky-300"></span>
+                  <span>Banyaknya siswa yang <u>bukan</u> berusia di bawah 13 tahun ada 25 orang.</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="bg-white mt-8 rounded-2xl border border-sky-100 shadow-md overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-sky-800 mb-3">
+                2. Dari 3.000 lampu pijar, diambil 100 lampu pijar secara acak dan diuji.
+              </h3>
+              <p class="text-sky-900/90 leading-relaxed text-lg mb-4">
+                Ternyata dari 100 lampu pijar yang diuji ada 5 lampu pijar yang rusak. Banyaknya lampu pijar yang rusak
+                dari seluruh lampu pijar yang ada adalah sekitar….
+              </p>
+
+              <!-- Pilihan Jawaban -->
+              <ul class="space-y-2 text-lg mb-6">
+                <li>A. 60</li>
+                <li class="font-semibold text-sky-700">B. 150 <span class="text-green-600 font-bold">✓ Jawaban
+                    Benar</span></li>
+                <li>C. 300</li>
+                <li>D. 600</li>
+              </ul>
+
+              <!-- Pembahasan -->
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl text-lg">
+                <div class="font-semibold text-sky-800 mb-2">Pembahasan:</div>
+                <p class="text-sky-900/90">Jumlah seluruh lampu pijar = 3.000 lampu.</p>
+                <p class="text-sky-900/90">Dari 100 lampu pijar yang diuji, 5 lampu rusak.</p>
+
+                <p class="text-sky-900/90 mt-3">
+                  \( P(A) = \dfrac{n(A)}{n(S)} \times \text{jumlah total} \)
+                </p>
+
+                <p class="text-sky-900/90 mt-2">
+                  \( = \dfrac{5}{100} \times 3000 = 150 \)
+                </p>
+
+                <p class="text-sky-900/90 mt-3">
+                  Jadi, banyaknya lampu pijar yang rusak dari keseluruhan lampu pijar yang ada adalah sekitar <span
+                    class="font-semibold">150 lampu pijar</span>.
+                </p>
+
+                <p class="mt-4 font-bold text-sky-700">Jawaban: B</p>
+              </div>
+            </div>
+          </article>
+
+
+        </section>
+
+
+        {{-- C. Contoh Soal Penalaran --}}
+        <section>
+          <h2
+            class="text-2xl md:text-3xl font-bold text-sky-700 flex items-center gap-3 border-b-4 border-sky-400 pb-2 mb-6">
+            <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-lg">C</span>
+            Contoh Soal Penalaran
+          </h2>
+          <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-sky-800 mb-4">Contoh Soal Penalaran</h3>
+
+              <p class="text-sky-900/90 leading-relaxed text-lg">
+                Nazril berencana untuk memesan 24 edisi majalah. Dia membaca iklan dua majalah berikut. Satuan mata uang
+                yang digunakan adalah rupiah.
+              </p>
+
+              <!-- Dua Iklan Majalah -->
+              <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border-2 border-green-400 p-6">
+                  <h4 class="text-center text-lg font-semibold">Majalah</h4>
+                  <h5 class="text-center text-xl font-bold">Gaya Hidup Remaja</h5>
+                  <div class="mt-4 space-y-1 text-center">
+                    <p>24 Edisi</p>
+                    <p class="font-medium">Empat Edisi Pertama GRATIS</p>
+                    <p>Sisanya bayar @Rp. 15.000,00</p>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl border-2 border-green-400 p-6">
+                  <h4 class="text-center text-lg font-semibold">Majalah</h4>
+                  <h5 class="text-center text-xl font-bold">Seputar Remaja</h5>
+                  <div class="mt-4 space-y-1 text-center">
+                    <p>24 Edisi</p>
+                    <p class="font-medium">Enam Edisi Pertama GRATIS</p>
+                    <p>Sisanya bayar @Rp. 15.500,00</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-sky-900/90 leading-relaxed text-lg mt-6">
+                Berdasarkan kedua iklan di atas, akhirnya Nazril memutuskan untuk berlangganan <span
+                  class="font-semibold">Majalah Gaya Hidup Remaja</span> karena dia melihat harga per edisinya murah
+                dibandingkan <span class="font-semibold">Majalah Seputar Remaja</span>. Setujukah kamu dengan pilihan
+                Nazril? Berikan alasannya.
+              </p>
+
+              <!-- Pembahasan -->
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl text-lg mt-6">
+                <div class="font-semibold text-sky-800 mb-2">Pembahasan :</div>
+                <p class="text-sky-900/90">Kita hitung uang yang harus dibayarkan oleh Nazril untuk masing-masing
+                  majalah
+                  berdasarkan informasi dari iklan tersebut.</p>
+
+                <ul class="list-disc list-inside space-y-2 mt-3 text-sky-900/90">
+                  <li>
+                    <span class="font-medium">Jika Nazril berlangganan Majalah Gaya Hidup Remaja</span>, uang yang harus
+                    dibayarkan adalah sebagai berikut.<br>
+                    Dari 24 edisi, 4 edisi pertama gratis sehingga Nazril hanya membayar 20 edisi selanjutnya (24 − 4 =
+                    20).<br>
+                    Jadi, uang yang harus dibayarkan adalah 20 × Rp. 15.000,00 = <span class="font-semibold">Rp.
+                      300.000,00</span>.
+                  </li>
+
+                  <li>
+                    <span class="font-medium">Jika Nazril berlangganan Majalah Seputar Remaja</span>, uang yang harus
+                    dibayarkan adalah sebagai berikut.<br>
+                    Dari 24 edisi, 6 edisi pertama gratis sehingga Nazril hanya membayar 18 edisi selanjutnya (24 − 6 =
+                    18).<br>
+                    Jadi, uang yang harus dibayarkan adalah 18 × Rp. 15.500,00 = <span class="font-semibold">Rp.
+                      279.000,00</span>.
+                  </li>
+
+                  <li>
+                    <span class="font-medium">Selisih</span> uang yang harus dibayarkan adalah 300.000 − 279.000 = <span
+                      class="font-semibold">21.000</span>.<br>
+                    Berdasarkan perhitungan di atas, <span class="font-semibold">tidak setuju</span> dengan pilihan
+                    Nazril
+                    karena seharusnya dia memilih berlangganan <span class="font-semibold">Majalah Seputar Remaja</span>
+                    yang lebih murah <span class="font-semibold">Rp. 21.000</span> dibandingkan Majalah Gaya Hidup
+                    Remaja.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+
+
+
+        {{-- D. LATIHAN SOAL --}}
+
 
         {{-- CTA --}}
         <section class="text-center py-10">
           <div class="bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl p-8 text-white shadow-2xl shadow-sky-200">
-            <h2 class="text-3xl font-bold mb-3">Belum paham?</h2>
-            <p class="mb-6 max-w-2xl mx-auto">
-              Kembali belajar
-            </p>
-            <a href="{{ route('materi-data-dan-ketidakpastian') }}"
+            <h2 class="text-3xl font-bold mb-3">Sudah paham?</h2>
+            <p class="mb-6 max-w-2xl mx-auto">Yuk coba soal berikut.</p>
+            <a href="{{ route('materi-data-dan-ketidakpastian-soal') }}"
               class="inline-block bg-white text-sky-700 font-bold text-lg py-3 px-8 rounded-xl shadow-md hover:bg-sky-50 transform hover:-translate-y-0.5 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-600">
-              Pelajari Materi Kembali!
+              Coba Soal
             </a>
           </div>
         </section>
@@ -239,18 +510,3 @@
     </div>
   </div>
 </x-layouts.app>
-
-
-<script>
-  (function () {
-    function retypeset() {
-      if (window.MathJax && window.MathJax.typeset) {
-        window.MathJax.typeset();
-      }
-    }
-    document.addEventListener('DOMContentLoaded', retypeset);
-    document.addEventListener('turbo:load', retypeset); // jika pakai Turbo/Hotwire
-    document.addEventListener('livewire:load', retypeset); // jika pakai Livewire
-    document.addEventListener('alpine:init', retypeset); // jika pakai Alpine
-  })();
-</script>

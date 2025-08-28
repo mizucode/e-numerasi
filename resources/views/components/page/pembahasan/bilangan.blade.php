@@ -1,14 +1,16 @@
 <x-layouts.app>
     <x-slot:title>
-        Pembahasan Soal | E‑numerasi
+        Pembahasan Bilangan
     </x-slot:title>
 
-    <div class="bg-sky-50 min-h-screen">
+    <div class="bg-grid-bw min-h-screen">
         <div class="container mx-auto px-6 py-10">
 
             {{-- HEADER --}}
             <header class="mb-12 text-center">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-sky-600 tracking-tight">🧩 Pembahasan Soal — Materi
+                <h1 class="text-4xl md:text-5xl font-extrabold text-sky-600 tracking-tight">Pembahasan dan Contoh Soal
+                    —
+                    Materi
                     Bilangan</h1>
                 <p class="mt-3 text-lg text-sky-900/80 max-w-3xl mx-auto leading-relaxed">
                     Kumpulan contoh soal pemahaman, penerapan, dan penalaran lengkap dengan pembahasan.
@@ -17,13 +19,6 @@
 
             <main class="space-y-16">
 
-                {{-- KONVENSI UI --}}
-                <div class="rounded-xl bg-white border border-sky-100 shadow-sm p-4 md:p-5">
-                    <div class="flex items-center gap-2 text-sky-700 font-semibold mb-2">ℹ️ Cara Pakai</div>
-                    <p class="text-sky-900/80">Setiap kartu berisi <span class="font-semibold">Soal</span>, lalu <span
-                            class="font-semibold">Pembahasan</span>.
-                        Tanda ✅/❌ pada tabel menunjukkan benar/salah. </p>
-                </div>
 
                 {{-- A. Contoh Soal Pemahaman 1 --}}
                 <section>
@@ -35,45 +30,58 @@
 
                     <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-sky-800 mb-3">1) Titik A pada Garis Bilangan</h3>
-                            <p class="text-sky-900/90 leading-relaxed mb-4">
-                                Di garis bilangan, interval antara <span class="font-semibold">32</span> dan <span
-                                    class="font-semibold">33</span>
-                                dibagi menjadi 5 bagian sama. Bilangan <span class="font-semibold">A</span> berada 3
-                                langkah dari 32. Nilai A adalah …
-                            </p>
+                            <h3 class="text-xl font-bold text-sky-800 mb-3">Perhatikan Garis Bilangan Berikut.</h3>
+
+                            <img src="{{ asset('images/garisbilangan.png') }}" alt="">
+
+
+                            <p class="text-sky-900/90 leading-relaxed text-xl mt-2 mb-4">
+                                Bilangan <span class="font-semibold">A</span> yang memenuhi adalah …</p>
 
                             <ul class="grid sm:grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">32,3</li>
                                 <li
                                     class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 font-semibold text-sky-700">
-                                    32,6 ✅</li>
+                                    32,6 <span class="font-bold"> Jawaban Benar</span></li>
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">33,2</li>
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">33,4</li>
                             </ul>
 
-                            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl">
+                            <div class="bg-sky-50 border-l-4 text-xl border-sky-400 p-4 rounded-r-xl">
                                 <div class="font-semibold text-sky-800">Pembahasan</div>
-                                <p class="text-sky-900/90">Satu langkah bernilai <span class="font-mono">(33−32) ÷ 5 =
-                                        0,2</span>. Karena A 3 langkah dari 32:
+                                <p class="text-sky-900/90">Perhatikan bahwa antara bilangan 32 dan 33 dibagi menjadi 5
+                                    bagian, sehingga setiap 1 bagian bernilai<span class="font-mono">\[
+                                        \frac{1}{5}=0,2.
+                                        \]
+                                    </span>Bilangan A berada 3 langkah dari bilangan 32, sehingga nilainya sebagai
+                                    berikut.
                                     <span class="font-mono">32 + 3 × 0,2 = 32 + 0,6 = 32,6</span>.
                                 </p>
+                                <p
+                                    class="inline-flex items-center rounded-md bg-sky-100 px-2 text-lg py-1  mt-4 font-medium text-sky-800 ring-1 ring-inset ring-sky-200">
+                                    Jawaban: 32,6</p>
                             </div>
                         </div>
                     </article>
 
                     <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden mt-8">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-sky-800 mb-3">2) Manajemen Waktu Nani</h3>
-                            <p class="text-sky-900/90 leading-relaxed mb-4">
-                                Dalam satu hari (24 jam), Nani: tidur <span class="font-mono">1/4</span> bagian,
-                                sekolah <span class="font-mono">1/3</span> bagian, makan & belajar <span
-                                    class="font-mono">1/8</span> bagian.
-                                Sisanya untuk aktivitas lain. Tentukan benar/salah tiap pernyataan!
+                            <h3 class="text-xl font-bold text-sky-800 mb-3">Manajemen Waktu Nani</h3>
+                            <p class="text-sky-900/90 text-xl leading-relaxed mb-4">
+                                Dalam satu hari, Nani menggunakan,<span class="font-mono">\[
+                                    \dfrac{1}{4}
+                                    \]
+                                </span> bagian waktunya untuk tidur,<span class="font-mono">\[
+                                    \dfrac{1}{3}
+                                    \]</span> Bagian untuk belajar di sekolah,<span class="font-mono">\[
+                                    \dfrac{1}{3}
+                                    \]</span> Bagian untuk makan dan belajar. Sisanya untuk bermain, menonton TV, dan
+                                membantu orang tua. Beri tanda centang (✅) pada kolom Benar atau Salah untuk setiap
+                                pernyataan berikut.
                             </p>
 
-                            <div class="overflow-x-auto">
-                                <table class="min-w-[560px] w-full text-left border-collapse">
+                            <div class="overflow-x-auto shadow-md mb-4">
+                                <table class="min-w-[560px] w-full text-xl text-left border-collapse">
                                     <thead>
                                         <tr class="bg-sky-600 text-white">
                                             <th class="py-3 px-4 rounded-tl-xl">Pernyataan</th>
@@ -88,12 +96,14 @@
                                             <td class="py-3 px-4">✅</td>
                                         </tr>
                                         <tr class="border-b border-sky-100">
-                                            <td class="py-3 px-4">Selama 8 jam, Nani belajar di sekolah.</td>
+                                            <td class="py-3 px-4">Selama 8 jam, Nani menghabiskan waktunya belajar di
+                                                sekolah.</td>
                                             <td class="py-3 px-4">✅</td>
                                             <td class="py-3 px-4">❌</td>
                                         </tr>
                                         <tr>
-                                            <td class="py-3 px-4">Aktivitas lain (main, TV, bantu orang tua) = 7 jam.
+                                            <td class="py-3 px-4">Bermain, menonton TV, dan membantu orang tua,
+                                                dilakukan selama 7 jam.
                                             </td>
                                             <td class="py-3 px-4">✅</td>
                                             <td class="py-3 px-4">❌</td>
@@ -102,14 +112,73 @@
                                 </table>
                             </div>
 
-                            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl mt-4">
-                                <div class="font-semibold text-sky-800">Pembahasan</div>
-                                <ul class="list-disc pl-6 text-sky-900/90 space-y-1">
-                                    <li>Tidur: <span class="font-mono">1/4 × 24 = 6</span> jam.</li>
-                                    <li>Sekolah: <span class="font-mono">1/3 × 24 = 8</span> jam (terbanyak).</li>
-                                    <li>Makan & belajar: <span class="font-mono">1/8 × 24 = 3</span> jam.</li>
-                                    <li>Sisa: <span class="font-mono">24 − 6 − 8 − 3 = 7</span> jam.</li>
+                            <div class="bg-sky-50 border-l-4 text-sky-800 text-xl border-sky-400 p-4 rounded-r-xl mt-4">
+                                <div class="font-semibold ">Pembahasan</div>
+                                <p>Dalam satu hari terdapat 24 jam.</p>
+                                <p>Untuk tidur digunakan waktu selama:</p>
+                                <p>\[
+                                    \frac{1}{4}\times 24 = 6\,\text{jam}
+                                    \]
+                                </p>
+                                <p>Untuk belajar di sekolah digunakan waktu selama:</p>
+                                <p>\[
+                                    \frac{1}{3}\times 24 = 8\,\text{jam}
+                                    \]
+                                </p>
+                                <p>Untuk makan dan belajar digunakan waktu selama:</p>
+                                <p>\[
+                                    \frac{1}{8}\times 24 = 3\,\text{jam}
+                                    \]
+                                </p>
+                                <p>Untuk bermain, menonton TV, dan membantu orang tua digunakan waktu selama:</p>
+                                <p>24 – 6 – 8 – 3 = 7 jam</p>
+                                <ul class="space-y-3 mt-4">
+                                    <!-- SALAH -->
+                                    <li
+                                        class="flex items-start gap-3 rounded-xl border border-sky-100 bg-white p-4 shadow-sm">
+                                        <span class="text-red-600 text-xl leading-6">❌</span>
+                                        <div class="flex-1">
+                                            <p class="text-sky-900/90">
+                                                Nani menghabiskan waktu terbanyak untuk belajar di sekolah.
+                                            </p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-red-50 px-2.5 py-0.5 text-xs font-semibold text-red-700 ring-1 ring-inset ring-red-200">
+                                                Pernyataan salah
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <!-- BENAR -->
+                                    <li
+                                        class="flex items-start gap-3 rounded-xl border border-sky-100 bg-white p-4 shadow-sm">
+                                        <span class="text-sky-600 text-xl leading-6">✅</span>
+                                        <div class="flex-1">
+                                            <p class="text-sky-900/90">
+                                                Nani menghabiskan waktunya belajar di sekolah selama 8 jam.
+                                            </p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">
+                                                Pernyataan benar
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                    <!-- BENAR -->
+                                    <li
+                                        class="flex items-start gap-3 rounded-xl border border-sky-100 bg-white p-4 shadow-sm">
+                                        <span class="text-sky-600 text-xl leading-6">✅</span>
+                                        <div class="flex-1">
+                                            <p class="text-sky-900/90">
+                                                Bermain, menonton TV, dan membantu orang tua dilakukan selama 7 jam.
+                                            </p>
+                                            <span
+                                                class="mt-2 inline-block rounded-full bg-sky-50 px-2.5 py-0.5 text-xs font-semibold text-sky-700 ring-1 ring-inset ring-sky-200">
+                                                Pernyataan benar
+                                            </span>
+                                        </div>
+                                    </li>
                                 </ul>
+
                             </div>
                         </div>
                     </article>
@@ -125,92 +194,191 @@
 
                     <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-sky-800 mb-3">1) Panjang Pipa</h3>
-                            <p class="text-sky-900/90 mb-3">Seorang pekerja memotong <span class="font-mono">1/5</span>
-                                bagian pipa. Panjang yang dipotong 3 m. Panjang pipa mula‑mula adalah …</p>
-                            <ul class="grid sm:grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                            <h3 class="text-xl font-bold  mb-3">Seorang pekerja bangunan</h3>
+
+                            <p class="text-sky-900/90 leading-relaxed lg:flex items-center text-xl mt-2 mb-4">
+                                Seorang pekerja bangunan memotong <span class="font-mono lg:px-4">\[ \dfrac{1}{5}
+                                    \]</span>
+                                bagian dari pipa. Panjang pipa yang dipotong adalah 3 m. Panjang pipa
+                                mula-mula adalah...</p>
+
+                            <ul class="grid sm:grid-cols-2 text-sky-800 text-xl md:grid-cols-4 gap-3 mb-4">
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">8 m</li>
+
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">12 m</li>
                                 <li
                                     class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 font-semibold text-sky-700">
-                                    15 m ✅</li>
+                                    15 m<span class="font-bold italic"> Jawaban Benar</span></li>
                                 <li class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2">18 m</li>
                             </ul>
-                            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl">
+
+                            <div class="bg-sky-50 border-l-4 text-xl text-sky-900/90 border-sky-400 p-4 rounded-r-xl">
                                 <div class="font-semibold text-sky-800">Pembahasan</div>
-                                <p class="text-sky-900/90">Jika <span class="font-mono">1/5</span> panjang = 3 m, maka
-                                    seluruh panjang
-                                    <span class="font-mono">= 3 ÷ (1/5) = 3 × 5 = 15</span> m.
+                                <p class="lg:flex items-center">Diketahui <span
+                                        class="font-mono lg:px-4">\[\dfrac{1}{5}\]</span>
+                                    bagian dari seluruh panjang pipa adalah 3 meter. Sehingga diperoleh
+                                    <span class="font-mono px-4">\[
+                                        \frac{1}{5}\times L = 3
+                                        \]
+                                    </span>
                                 </p>
+                                <p>Kita dapat mengganti L dengan bilangan 15, karena <span class="font-mono">\[
+                                        \frac{1}{5}\times 15 = 3
+                                        \]
+                                    </span></p>
+
+                                <p>Jadi, panjang pipa mula-mula adalah 15m.</p>
+                                <p
+                                    class="inline-flex items-center rounded-md bg-sky-100 px-2 text-lg py-1  mt-4 font-medium text-sky-800 ring-1 ring-inset ring-sky-200">
+                                    Jawaban: 15 m</p>
                             </div>
                         </div>
                     </article>
 
                     <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden mt-8">
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-sky-800 mb-3">2) Wadah Minyak Berbentuk Kubus</h3>
-                            <p class="text-sky-900/90 mb-3">Minyak goreng 2 liter (2.000 cm³) ingin dimuat dalam wadah
-                                kubus. Pilih semua panjang rusuk yang <em>mungkin</em>:</p>
-                            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-3">
-                                <label
-                                    class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 flex items-center gap-2"><input
-                                        type="checkbox" disabled>10 cm</label>
-                                <label
-                                    class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 flex items-center gap-2"><input
-                                        type="checkbox" disabled>12 cm</label>
-                                <label
-                                    class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 flex items-center gap-2 font-semibold text-sky-700"><input
-                                        type="checkbox" checked disabled>13 cm</label>
-                                <label
-                                    class="bg-sky-50 border border-sky-100 rounded-lg px-3 py-2 flex items-center gap-2 font-semibold text-sky-700"><input
-                                        type="checkbox" checked disabled>15 cm</label>
-                            </div>
-                            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl mt-4">
-                                <div class="font-semibold text-sky-800">Pembahasan</div>
-                                <p class="text-sky-900/90">Volume kubus <span class="font-mono">= s³</span>. Agar memuat
-                                    ≥ 2.000 cm³:
-                                    <span class="font-mono">12³ = 1.728</span> (kurang), <span class="font-mono">13³ =
-                                        2.197</span> (cukup),
-                                    <span class="font-mono">15³ = 3.375</span> (cukup). Jadi 13 cm & 15 cm.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                            <h3 class="text-xl font-bold text-sky-800 mb-3">Seorang Penjual Gorengan</h3>
+                            <p class="text-sky-900/90 text-xl leading-relaxed mb-4">
+                                Seorang penjual gorengan ingin membuat wadah minyak goreng berbentuk kubus. Ia biasa
+                                membeli minyak goreng dalam kemasan 2 liter. Jika ia menginginkan agar wadah tersebut
+                                dapat memuat seluruh minyak goreng yang ia beli, berapakah panjang rusuk wadah yang
+                                harus ia buat? Berilah tanda centang (✅) pada jawaban yang mungkin.
+                            </p>
 
-                    <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden mt-8">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-sky-800 mb-3">3) Persentase Lemparan Jitu</h3>
-                            <div class="overflow-x-auto">
-                                <table class="min-w-[560px] w-full text-left border-collapse">
-                                    <thead>
-                                        <tr class="bg-sky-600 text-white">
-                                            <th class="py-3 px-4 rounded-tl-xl">Nama</th>
-                                            <th class="py-3 px-4">Lemparan Jitu</th>
-                                            <th class="py-3 px-4 rounded-tr-xl">Persentase</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-sky-900/90">
-                                        <tr class="border-b border-sky-100">
-                                            <td class="py-3 px-4">Ihsan</td>
-                                            <td class="py-3 px-4">10 dari 20</td>
-                                            <td class="py-3 px-4">50%</td>
-                                        </tr>
-                                        <tr class="border-b border-sky-100">
-                                            <td class="py-3 px-4">Anwar</td>
-                                            <td class="py-3 px-4">15 dari 20</td>
-                                            <td class="py-3 px-4">75%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="py-3 px-4">Fariz</td>
-                                            <td class="py-3 px-4">16 dari 20</td>
-                                            <td class="py-3 px-4">80%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <ul class="space-y-2">
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-900/90">10 cm</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-900/90">12 cm</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-700">13 cm</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-700">15 cm</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+
+
+
+                            <div class="bg-sky-50 border-l-4 text-sky-800 text-xl border-sky-400 p-4 rounded-r-xl mt-4">
+                                <div class="font-semibold ">Pembahasan</div>
+
+                                <p>Wadah harus memuat minyak goreng sebanyak <span>\[
+                                        2\,\mathrm{L} = 2\,\mathrm{dm}^{3} = 2\,000\,\mathrm{cm}^{3}.
+                                        \]
+                                    </span></p>
+                                <p>Wadah berbentuk kubus dengan panjang rusuk = s </p>
+                                <p class="flex items-center">Maka volumenya = <span class="font-bold pl-4">\[
+                                        s \times s \times s = s^{3}
+                                        \]
+                                    </span></p>
+
+
+
+                                <div class="overflow-x-auto shadow-md my-4">
+                                    <table class="min-w-[560px] w-full text-xl text-left border-collapse">
+                                        <thead>
+                                            <tr class="bg-sky-600 text-white">
+                                                <th class="py-3 px-4 rounded-tl-xl">Panjang Rusuk Wadah</th>
+                                                <th class="py-3 px-4">Volume Wadah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sky-900/90 bg-white">
+                                            <tr class="border-b border-sky-100">
+                                                <td class="py-3 px-4">10 cm
+                                                </td>
+                                                <td class="py-3 px-4">\[
+                                                    10^{3} = 1{.}000\,\mathrm{cm}^{3} = 1\,\mathrm{L}
+                                                    \]
+                                                </td>
+
+                                            </tr>
+                                            <tr class="border-b border-sky-100">
+                                                <td class="py-3 px-4">12 cm</td>
+                                                <td class="py-3 px-4">\[
+                                                    12^{3} = 1{.}728\,\mathrm{cm}^{3} = 1{,}728\,\mathrm{L}
+                                                    \]
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4">13 cm
+                                                </td>
+                                                <td class="py-3 px-4">\[
+                                                    13^{3} = 2{.}197\,\mathrm{cm}^{3} = 2{,}197\,\mathrm{L}
+                                                    \]
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-4">15 cm
+                                                </td>
+                                                <td class="py-3 px-4">\[
+                                                    15^{3} = 3{.}375\,\mathrm{cm}^{3} = 3{,}375\,\mathrm{L}
+                                                    \]
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p>Volume wadah harus lebih dari 2 liter, maka panjang rusuk yang mungkin:</p>
+
+
+                                <ul class="space-y-2 my-4">
+                                    <li>
+                                        <label
+                                            class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                            <input type="checkbox" class="accent-sky-600" disabled>
+                                            <span class="text-sky-900/90">10 cm</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label
+                                            class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                            <input type="checkbox" class="accent-sky-600" disabled>
+                                            <span class="text-sky-900/90">12 cm</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label
+                                            class="inline-flex items-center gap-2 bg-white border border-sky-200 rounded px-3 py-2 shadow-sm font-semibold">
+                                            <input type="checkbox" class="accent-gray-900" checked>
+                                            <span class="text-gray-900">13 cm</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label
+                                            class="inline-flex items-center gap-2 bg-white border border-sky-200 rounded px-3 py-2 shadow-sm font-semibold">
+                                            <input type="checkbox" class="accent-gray-900" checked>
+                                            <span class="text-gray-900">15 cm</span>
+                                        </label>
+                                    </li>
+
+                                </ul>
+
                             </div>
                         </div>
                     </article>
                 </section>
+
 
                 {{-- C. Contoh Soal Penalaran --}}
                 <section>
@@ -221,170 +389,145 @@
                     </h2>
 
                     <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
-                        <div class="p-6 space-y-3">
-                            <h3 class="text-xl font-bold text-sky-800">Relasi Bilangan A, B, C, D, E</h3>
-                            <p class="text-sky-900/90">Diketahui A = 8,6. B dua kali C, B = D + 1,7, A = E + 2,4, dan E
-                                = B − 1. Tentukan benar/salah:</p>
-                            <ul class="list-disc pl-6 text-sky-900/90">
-                                <li>B merupakan bilangan terbesar.</li>
-                                <li>C lebih kecil dari jumlah A dan D.</li>
-                                <li>D merupakan bilangan terkecil.</li>
-                                <li>Jika diurutkan, C berada di tengah.</li>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold  mb-3">Menentukan Bilangan</h3>
+
+                            <p class="text-sky-900/90 leading-relaxed flex items-center text-xl mt-2 mb-4">Bilangan A
+                                adalah 8,6. Bilangan B dua kali lebih besar daripada C bernilai 1,7 lebihnya dari
+                                bilangan D. Bilangan A bernilai 2,4 lebihnya dari E. Jika bilangan E satu kurangnya dari
+                                B, berilah tanda centang () pada pernyataan di bawah ini yang benar.</p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-900/90">B merupakan bilangan terbesar.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-900/90">C lebih kecil dari jumlah A dan D.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-700">D merupakan bilangan terkecil.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label
+                                        class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                        <input type="checkbox" class="accent-sky-600" disabled>
+                                        <span class="text-sky-700">Jika diurutkan berdasarkan nilainya, C merupakan
+                                            bilangan yang berada di tengah.</span>
+                                    </label>
+                                </li>
                             </ul>
 
-                            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-xl">
-                                <div class="font-semibold text-sky-800">Pembahasan (ringkas)</div>
-                                <p class="text-sky-900/90">Dari relasi: <span class="font-mono">E = A − 2,4 = 6,2</span>
-                                    dan <span class="font-mono">B = E + 1 = 7,2</span>,
-                                    sehingga <span class="font-mono">D = B − 1,7 = 5,5</span>, lalu <span
-                                        class="font-mono">C = B ÷ 2 = 3,6</span>.
-                                    Urutan naik: <span class="font-mono">C (3,6) &lt; D (5,5) &lt; E (6,2) &lt; B (7,2)
-                                        &lt; A (8,6)</span>.
-                                </p>
-                                <ul class="list-disc pl-6 mt-2 text-sky-900/90">
-                                    <li><span class="font-semibold">B terbesar?</span> ❌ (A terbesar)</li>
-                                    <li><span class="font-semibold">C &lt; A + D?</span> ✅ (3,6 &lt; 14,1)</li>
-                                    <li><span class="font-semibold">D terkecil?</span> ❌ (C terkecil)</li>
-                                    <li><span class="font-semibold">C di tengah?</span> ❌ (tengahnya E)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </section>
+                            <div
+                                class="bg-sky-50 border-l-4 mt-4 text-xl text-sky-900/90 border-sky-400 p-4 rounded-r-xl">
+                                <div class="font-semibold text-sky-800">Pembahasan</div>
+                                <div class="space-y-4">
+                                    <p>Diketahui A = 8,6.</p>
+                                    <p>A Bernilai 2,4 lebihnya dari E.</p>
+                                    <p>E=A-2,4=8,6-2,4=6,2</p>
+                                    <p>E satu kurangnya dari B:</p>
+                                    <p>B=E+1=6,2+1=7,2</p>
+                                    <p>B dua kali lebih besar daripada C:</p>
+                                    <p>\[
+                                        C = \frac{B}{2} = \frac{7,2}{2} = 3,6
+                                        \]
+                                    </p>
+                                    <p>C bernilai 1,7 lebihnya dari D:</p>
+                                    <p>D=C-1,7=3,6-1,7=1,9</p>
+                                    <ul class="list-disc list-inside space-y-3 p-5 text-sky-900/90">
+                                        <li>
+                                            Urutan bilangan dari yang terkecil adalah:
+                                            <span class="font-semibold italic">D (1,9), C (3,6), E (6,2), B (7,2), A
+                                                (8,6)</span>.
+                                        </li>
+                                        <li>
+                                            Pernyataan "B merupakan bilangan terbesar" adalah <span
+                                                class="font-semibold text-red-600">salah</span>. Bilangan terbesar
+                                            adalah A (8,6).
+                                        </li>
+                                        <li>
+                                            Pernyataan "C lebih kecil dari jumlah A dan D" adalah <span
+                                                class="font-semibold text-sky-700">benar</span>, karena C (3,6) lebih
+                                            kecil dari A + D (8,6 + 1,9 = 10,5).
+                                        </li>
+                                        <li>
+                                            Pernyataan "D merupakan bilangan terkecil" adalah <span
+                                                class="font-semibold text-sky-700">benar</span>, karena D memiliki
+                                            nilai paling kecil (1,9).
+                                        </li>
+                                        <li>
+                                            Pernyataan "C merupakan bilangan yang berada di tengah" adalah <span
+                                                class="font-semibold text-red-600">salah</span>. Bilangan yang berada di
+                                            tengah adalah E (6,2).
+                                        </li>
+                                    </ul>
 
-                {{-- D. LATIHAN SOAL --}}
-                <section>
-                    <h2
-                        class="text-2xl md:text-3xl font-bold text-sky-700 flex items-center gap-3 border-b-4 border-sky-400 pb-2 mb-6">
-                        <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-lg">D</span>
-                        Latihan Soal
-                    </h2>
 
-                    <article class="bg-white rounded-2xl border border-sky-100 shadow-md overflow-hidden">
-                        <div class="p-6 space-y-6">
-                            <div>
-                                <h3 class="text-xl font-bold text-sky-800 mb-2">Pemahaman</h3>
-                                <ol class="list-decimal pl-6 space-y-2 text-sky-900/90">
-                                    <li>Pada garis bilangan berikut, bilangan A yang mungkin adalah … (pilih salah satu)
-                                        <div class="mt-2 grid sm:grid-cols-2 md:grid-cols-4 gap-2">
-                                            <span class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,25</span>
-                                            <span class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,20</span>
-                                            <span class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,15</span>
-                                            <span class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,125</span>
-                                        </div>
-                                    </li>
-                                    <li>Beri tanda centang pada bilangan yang terletak antara 0,07 dan 0,08.
-                                        <div class="mt-2 grid sm:grid-cols-2 md:grid-cols-5 gap-2">
+                                    <p>Jadi, jawaban yang benar adalah sebagai berikut.</p>
+                                    <ul class="space-y-2">
+                                        <li>
                                             <label
-                                                class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,0075</label>
+                                                class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm">
+                                                <input type="checkbox" class="accent-sky-600" disabled>
+                                                <span class="text-sky-900/90">B merupakan bilangan terbesar.</span>
+                                            </label>
+                                        </li>
+                                        <li>
                                             <label
-                                                class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,0705</label>
+                                                class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                                <input type="checkbox" class="accent-sky-600" checked disabled>
+                                                <span class="text-sky-700">C lebih kecil dari jumlah A dan
+                                                    D.</span>
+                                            </label>
+                                        </li>
+                                        <li>
                                             <label
-                                                class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,0775</label>
+                                                class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                                <input type="checkbox" class="accent-sky-600" checked disabled>
+                                                <span class="text-sky-700">D merupakan bilangan terkecil.</span>
+                                            </label>
+                                        </li>
+                                        <li>
                                             <label
-                                                class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,0801</label>
-                                            <label
-                                                class="bg-sky-50 border border-sky-100 rounded px-3 py-1">0,75</label>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </div>
+                                                class="inline-flex items-center gap-2 bg-white border border-sky-100 rounded px-3 py-2 shadow-sm font-semibold">
+                                                <input type="checkbox" class="accent-sky-600" disabled>
+                                                <span class="text-sky-700">Jika diurutkan berdasarkan nilainya, C
+                                                    merupakan
+                                                    bilangan yang berada di tengah.</span>
+                                            </label>
+                                        </li>
+                                    </ul>
 
-                            <div>
-                                <h3 class="text-xl font-bold text-sky-800 mb-2">Penerapan</h3>
-                                <ol class="list-decimal pl-6 space-y-3 text-sky-900/90">
-                                    <li>Pada tes matematika 75 soal (benar = 2, salah = −1/2, kosong = 0). Data:
-                                        <div class="overflow-x-auto mt-2">
-                                            <table class="min-w-[560px] w-full text-left border-collapse">
-                                                <thead>
-                                                    <tr class="bg-sky-600 text-white">
-                                                        <th class="py-2 px-3 rounded-tl-xl">Nama</th>
-                                                        <th class="py-2 px-3">Benar</th>
-                                                        <th class="py-2 px-3">Tidak Dijawab</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="border-b border-sky-100">
-                                                        <td class="py-2 px-3">Ani</td>
-                                                        <td class="py-2 px-3">50</td>
-                                                        <td class="py-2 px-3">10</td>
-                                                    </tr>
-                                                    <tr class="border-b border-sky-100">
-                                                        <td class="py-2 px-3">Budi</td>
-                                                        <td class="py-2 px-3">60</td>
-                                                        <td class="py-2 px-3">8</td>
-                                                    </tr>
-                                                    <tr class="border-b border-sky-100">
-                                                        <td class="py-2 px-3">Cici</td>
-                                                        <td class="py-2 px-3">55</td>
-                                                        <td class="py-2 px-3">2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="py-2 px-3">Deni</td>
-                                                        <td class="py-2 px-3">40</td>
-                                                        <td class="py-2 px-3">12</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        Jika batas lulus 75, beri centang pada siswa yang lulus.
-                                    </li>
-                                    <li>Penurunan suhu kulkas setelah listrik padam. Lengkapi & tentukan suhu pada pukul
-                                        07.25.</li>
-                                    <li>Sebuah rapat dihadiri 30 orang, 0,6 bagiannya laki‑laki. Kemudian datang 12
-                                        perempuan. Tentukan bagian laki‑laki yang baru.</li>
-                                </ol>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-bold text-sky-800 mb-2">Penalaran</h3>
-                                <p class="text-sky-900/90">Jumlah penduduk kota 300.000 jiwa. Sebagian adalah dewasa,
-                                    sisanya anak‑anak. Sebagian dewasa laki‑laki, sebagian anak‑anak perempuan. Tentukan
-                                    benar/salah tiap pernyataan sesuai hitunganmu.</p>
-                                <div class="overflow-x-auto mt-2">
-                                    <table class="min-w-[560px] w-full text-left border-collapse">
-                                        <thead>
-                                            <tr class="bg-sky-600 text-white">
-                                                <th class="py-2 px-3 rounded-tl-xl">Pernyataan</th>
-                                                <th class="py-2 px-3">Benar</th>
-                                                <th class="py-2 px-3 rounded-tr-xl">Salah</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="border-b border-sky-100">
-                                                <td class="py-2 px-3">Perempuan dewasa lebih banyak dari laki‑laki
-                                                    dewasa.</td>
-                                                <td class="py-2 px-3"></td>
-                                                <td class="py-2 px-3"></td>
-                                            </tr>
-                                            <tr class="border-b border-sky-100">
-                                                <td class="py-2 px-3">Banyak anak laki‑laki = 56.250 orang.</td>
-                                                <td class="py-2 px-3"></td>
-                                                <td class="py-2 px-3"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-3">Banyak laki‑laki dewasa &lt; banyak anak
-                                                    perempuan.</td>
-                                                <td class="py-2 px-3"></td>
-                                                <td class="py-2 px-3"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
                     </article>
+
                 </section>
+
+                {{-- D. LATIHAN SOAL --}}
+
 
                 {{-- CTA --}}
                 <section class="text-center py-10">
                     <div
                         class="bg-gradient-to-br from-sky-400 to-sky-600 rounded-2xl p-8 text-white shadow-2xl shadow-sky-200">
-                        <h2 class="text-3xl font-bold mb-3">Masih belum paham?</h2>
-                        <p class="mb-6 max-w-2xl mx-auto">Yuk kembali ke halaman sebelumnya.</p>
-                        <a href="{{ route('materi-bilangan') }}"
+                        <h2 class="text-3xl font-bold mb-3">Sudah paham?</h2>
+                        <p class="mb-6 max-w-2xl mx-auto">Yuk coba soal berikut.</p>
+                        <a href="{{ route('materi-bilangan-soal') }}"
                             class="inline-block bg-white text-sky-700 font-bold text-lg py-3 px-8 rounded-xl shadow-md hover:bg-sky-50 transform hover:-translate-y-0.5 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sky-600">
-                            Kembali ke Materi
+                            Coba Soal
                         </a>
                     </div>
                 </section>

@@ -5,6 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ $title ?? 'Judul Default' }} | E-numerasi</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg viewBox='0 0 51.3 53.3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49.8 20.4L27.1 7.5v17.2l14.4 8.3v17.2l8.3-4.8v-25zM1.5 20.4l22.7-12.9v17.2L9.8 33v17.2L1.5 45.4v-25zM25.6 0L1.2 14.1l24.4 14.1 24.4-14.1L25.6 0z' fill='%23F4645F'/%3E%3C/svg%3E">
+
   @vite('resources/css/app.css')
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
@@ -68,37 +71,58 @@
 
 <body class="font-sans">
   <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-white shadow-md">
-    <div class="container mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
+    <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Logo -->
         <div class="text-2xl font-bold text-sky-600">E-numerasi</div>
-        <div class="hidden items-center space-x-8 text-lg md:flex">
-          <a href="{{ route('home') }}" class="text-sky-600 hover:text-red-400">Home</a>
 
-
-          <a href="{{ route('master-pembahasan') }}" class="text-sky-600 hover:text-red-400">Pembahasan</a>
-          <a href="{{ route('master-soal') }}" class="text-sky-600 hover:text-red-400">Soal</a>
-          <a href="{{ route('master-model') }}" class="text-sky-600 hover:text-red-400">Model</a>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 text-base lg:text-lg font-medium">
+          <a href="{{ route('home') }}" class="text-sky-600 hover:text-red-400 transition-colors">Home</a>
+          <a href="{{ route('master-pembahasan') }}"
+            class="text-sky-600 hover:text-red-400 transition-colors">Pembahasan</a>
+          <a href="{{ route('master-soal') }}" class="text-sky-600 hover:text-red-400 transition-colors">Soal</a>
+          <a href="{{ route('master-model') }}" class="text-sky-600 hover:text-red-400 transition-colors">Model</a>
           <a href="{{ route('master-materi') }}"
-            class="rounded-md bg-sky-600 px-6 py-2 text-white transition-colors hover:bg-red-400">Materi</a>
-
+            class="rounded-lg bg-sky-600 px-5 py-2 text-white transition-colors hover:bg-red-400 shadow">
+            Materi
+          </a>
         </div>
+
+        <!-- Mobile Hamburger -->
         <div class="md:hidden">
-          <button @click="open = !open" class="hamburger focus:outline-none" :class="{ 'open': open }">
-            <div class="hamburger-top"></div>
-            <div class="hamburger-middle"></div>
-            <div class="hamburger-bottom"></div>
+          <button @click="open = !open"
+            class="relative flex h-8 w-8 flex-col items-center justify-center focus:outline-none">
+            <span aria-hidden="true" class="block h-0.5 w-6 rounded bg-sky-600 transition-all duration-300"
+              :class="{ 'rotate-45 translate-y-2': open }"></span>
+            <span aria-hidden="true" class="mt-1 block h-0.5 w-6 rounded bg-sky-600 transition-all duration-300"
+              :class="{ 'opacity-0': open }"></span>
+            <span aria-hidden="true" class="mt-1 block h-0.5 w-6 rounded bg-sky-600 transition-all duration-300"
+              :class="{ '-rotate-45 -translate-y-1': open }"></span>
           </button>
         </div>
       </div>
     </div>
-    {{-- Mobile Menu --}}
+
+    <!-- Mobile Menu -->
     <div x-show="open" x-transition:enter="transition ease-out duration-300"
-      x-transition:enter-start="opacity-0 transform -translate-y-2"
-      x-transition:enter-end="opacity-100 transform translate-y-0" x-transition:leave="transition ease-in duration-200"
-      x-transition:leave-start="opacity-100 transform translate-y-0"
-      x-transition:leave-end="opacity-0 transform -translate-y-2" class="pb-4 md:hidden" @click.away="open = false">
-      <a href="#" class="block px-6 py-2 text-sm text-sky-600 hover:bg-gray-200">Home</a>
-      <a href="#" class="block px-6 py-2 text-sm text-sky-600 hover:bg-gray-200">Materi</a>
+      x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
+      x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
+      x-transition:leave-end="opacity-0 -translate-y-2" class="md:hidden bg-white shadow-inner"
+      @click.away="open = false">
+
+      <div class="space-y-1 px-4 py-4">
+        <a href="{{ route('home') }}" class="block rounded-md px-3 py-2 text-sky-600 hover:bg-gray-100">Home</a>
+        <a href="{{ route('master-pembahasan') }}"
+          class="block rounded-md px-3 py-2 text-sky-600 hover:bg-gray-100">Pembahasan</a>
+        <a href="{{ route('master-soal') }}" class="block rounded-md px-3 py-2 text-sky-600 hover:bg-gray-100">Soal</a>
+        <a href="{{ route('master-model') }}"
+          class="block rounded-md px-3 py-2 text-sky-600 hover:bg-gray-100">Model</a>
+        <a href="{{ route('master-materi') }}"
+          class="block rounded-md bg-sky-600 px-3 py-2 text-white hover:bg-red-400">
+          Materi
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -130,7 +154,8 @@
         {{-- Contact Info --}}
         <div>
           <h4 class="mb-4 text-lg font-semibold">Hubungi Kami</h4>
-          <p class="text-gray-400">Jl. Pendidikan No. 123<br>Kota Pelajar, 55281<br>info@e-numerasi.com</p>
+          <p class="text-gray-400">Jl. Raya Cigugur, Kuningan, Kec. Kuningan<br>Kabupaten Kuningan, Jawa Barat
+            45511<br>info@umkuningan.ac.id</p>
         </div>
       </div>
       <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">

@@ -88,3 +88,15 @@ Route::get('/materi/aljabar/soal', function () {
 Route::get('/materi/aljabar/model', function () {
     return view('components.page.model.aljabar', );
 })->name('materi-aljabar-model');
+
+
+
+Route::get('/materi/bilangan/soal', function () {
+    return view('components.page.soal.bilangan', );
+})->name('materi-bilangan-soal');
+Route::get('/materi/geometri/soal', function () {
+    return view('components.page.soal.geometri', );
+})->name('materi-geometri-soal');
+Route::get('/materi/data-dan-ketidakpastian/soal', function () {
+    return view('components.page.soal.data-dan-ketidakpastian', );
+})->name('materi-data-dan-ketidakpastian-soal');

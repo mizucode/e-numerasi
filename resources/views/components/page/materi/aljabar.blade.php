@@ -1,7 +1,7 @@
 <x-layouts.app>
-    <x-slot:title> Aljabar </x-slot:title>
+    <x-slot:title>Aljabar </x-slot:title>
 
-    <div class="bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600">
+    <div class="bg-grid-700 ">
         <div class="container mx-auto px-4 py-10 md:px-6 md:py-14">
             <header class="mb-10 text-center md:mb-14">
                 <div

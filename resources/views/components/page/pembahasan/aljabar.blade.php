@@ -1,6 +1,6 @@
 <x-layouts.app>
   <x-slot:title>
-    Pembahasan Aljabar | E‑numerasi
+    Pembahasan Aljabar
   </x-slot:title>
 
   <div class="bg-sky-50 min-h-screen">
